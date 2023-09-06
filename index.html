@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planit.css">
+    <title>Planit & Syder</title>
+</head>
+
+<body class="font1 bg-gray10">
+
+    <header class="fixed max-z-index top--03 auto w-full-100 h-4 ctr flex">
+        <div class="flex ctr w-100 bg-planit">
+            <a href="#" class="flex"><img src="img/logo-white.png" class="w-2" alt="logo"></a>
+            <a href="#" class="white flex mg-1 txt-font-1">Planit Css</a>
+        </div>
+        <!-- <div class="flex ctr w-50 bg-syder">
+            <a href="#" class="flex"><img src="img/syder-white.png" class="w-1-05" alt="logo"></a>
+            <a href="#" class="white flex mg-1 txt-font-1">Syder Js</a>
+        </div> -->
+    </header>
+
+    <div class="h-3"></div>
+
+    
+
+<main class="w-80 auto pd-v-2">
+
+    <div class="flex auto">
+        <div class="w-full-30 h-15 b-radius-05 relative overflow-hidden txt-center ctr txt-center auto">
+            <div class="absolute center-screen z-index-10">
+                <img src="img/logo-white.png" class="mg-top-1 w-7" alt="">
+                <h1 class="mg-top-0 txt-font-1-05 white">Planit 1.5</h1>
+            </div>
+                <div class="bg-planit-animated absolute top-0">
+                </div>
+        </div>
+        <div class="w-full-50 h-15 mg-left-0 txt-center ctr txt-center auto flex">
+            <p class="dark-blue txt-font-1 pd-v-1 pd-h-2">
+                A versão 1.5 do Planit conta com várias melhorias em seu arquivo fonte, conta com otimizações e leves alterações em seu modo de uso, facilitando usuários de versões anteriores para se habituar ao framework. Aproveite ao máximo explorando componentes e exemplos abaixo!
+            </p>
+        </div>
+
+    </div>
+    
+    <div class="flex mg-top-2">
+
+        <div class="w-full-30 h-15 b-radius-05 relative overflow-hidden txt-center ctr txt-center auto">
+            <div class="absolute center-screen z-index-10">
+                <img src="img/syder-white.png" class="mg-top-1 w-6" alt="">
+                <h1 class="mg-top-0 txt-font-1-05 white">Syder 1.0</h1>
+            </div>
+                <div class="bg-syder-animated absolute top-0">
+                </div>
+        </div>
+        <div class="w-full-50 mg-left-0 h-15 txt-center ctr txt-center auto flex">
+            <p class="dark-blue txt-font-1 pd-v-1 pd-h-2">
+                A versão 1.0 do Syder Implementa funções e animações interessantes que trabalham no lado visual do planit, permitindo o uso de animações através de classes e id's!
+            </p>
+        </div>
+
+    </div>
+    
+</main>
+
+<div class="divider h-4"></div>
+
+<main class="w-60 auto pd-v-4">
+    <h1 class="txt-font-2 mg-top-0 txt-center dark-blue">Aplicação</h1>
+    <div class="bg-console relative w-full-80 h-auto pd-bottom-3-02 auto ctr b-radius-05">
+        <div class="flex pd-1">
+            <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+            <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+            <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+        </div>
+
+        <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+          </svg>
+    
+          <p class="txt-center white" id="copiar1">
+            <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label><br>
+            <label class="blue-default">&lt;script</label> <label class="aqua">src</label>=<label class="orange-default">"syder.js"</label><label class="blue-default">&gt;</label><label class="blue-default">&lt;/script&gt;</label>
+        </p>
+
+    </div>
+</main>
+
+<div class="divider h-4"></div>
+
+<main class="w-80 h-35 auto pd-v-4">
+
+<div class="flex auto ctr txt-center mg-5">
+    <p onclick="change1()" id="option1" class="pointer fade link mg-top-0 mg-h-1-05">NAVS</p>
+    <p onclick="change2()" id="option2" class="pointer fade link mg-top-0 mg-h-1-05">HEADERS</p>
+    <p onclick="change3()" id="option3" class="pointer fade link mg-top-0 mg-h-1-05">FEATURES</p>
+    <p onclick="change4()" id="option4" class="pointer fade link mg-top-0 mg-h-1-05">CARROSSEL</p>
+    <p onclick="change5()" id="option5" class="pointer fade link mg-top-0 mg-h-1-05">FOOTERS</p>
+    <p onclick="change6()" id="option6" class="pointer fade link mg-top-0 mg-h-1-05">COMPONENTES</p>
+    <p onclick="change7()" id="option7" class="pointer fade link mg-top-0 mg-h-1-05">EXEMPLOS</p>
+</div>
+
+<div class="w-80 h-2 pd-bottom-7 pd-top-2 ctr txt-center auto">
+
+    <h1 for="tl" class="txt-font-2 dark-blue underline">NAVS</h1>
+
+<div class="flex txt-center auto ctr">
+    <p onclick="preview()" class="mg-1 pointer dark-blue txt-font-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 10">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg> Anterior</p>
+    <p onclick="next()" class="mg-1 pointer dark-blue txt-font-1">Próximo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 10">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg></p>
+</div>
+
+<div class="w-80 h-3 flex ctr txt-center">
+    <div onclick="fpg1()"  id="pg1"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-custom-blue">1</div>
+    <div onclick="fpg2()"  id="pg2"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">2</div>
+    <div onclick="fpg3()"  id="pg3"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">3</div>
+    <div onclick="fpg4()"  id="pg4"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">4</div>
+    <div onclick="fpg5()"  id="pg5"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">5</div>
+    <div onclick="fpg6()"  id="pg6"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">6</div>
+    <div onclick="fpg7()"  id="pg7"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">7</div>
+    <div onclick="fpg8()"  id="pg8"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">8</div>
+    <div onclick="fpg9()"  id="pg9"  class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">9</div>
+    <div onclick="fpg10()" id="pg10" class="pointer fade white mg-h-1 w-2 h-2 flex ctr txt-center bg-blue4">10</div>
+</div>
+
+</div>
+
+<main id="nav1" class="op-1 block fade">
+
+<div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+
+<nav class="w-full-100 h-4 bg-nav1 flex v-center-row">
+
+<div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+    <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+    <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+    <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+
+</div>
+
+<div class="w-81 flex v-center-row txt-center ctr auto relative">
+    <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+    <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+</div>
+
+<div class="w-100 flex v-center-row txt-center ctr auto">
+    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+</div>
+
+</nav>
+
+</div>
+
+<div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+    <div class="flex pd-1">
+        <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+        <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+        <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+    </div>
+
+    <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+      </svg>
+
+      <p class="txt-center white" id="copiar1">
+        <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+    </p>
+
+</div>
+</main>
+
+
+<main id="nav2" class="op-0 none fade">
+
+    <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+    
+    <nav class="w-full-100 h-4 bg-nav2 flex v-center-row">
+    
+    <div class="w-100 flex v-center-row txt-center mg-right-3 ctr pointer">
+        <div class="txt-font-1 white mg-right-5 relative open-h-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-2 absolute top--1" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+
+    
+    </div>
+    
+    <div class="w-81 flex v-center-row txt-center ctr auto relative">
+        <img src="img/logo-white.png" class="pointer w-2 planit-example op-1 fade" alt="logotipo">
+        <label class="planit-example-element  absolute op-0 white  one-row txt-font-1-05 fade">It's simple</label>
+        <label class="planit-example-element2 absolute  op-0 white one-row  txt-font-1-05 fade">It's beauty</label>
+        <label class="planit-example-element3 absolute  op-0 white one-row  txt-font-1-05 fade">It's Planit.</label>
+    </div>
+    
+    <div class="w-100 flex v-center-row txt-center ctr auto">
+        <a href="#" class="txt-font-1 mg-right-05 bg-transparent white hover-bg-nav2-dark fade pd-h-2 pd-v-05 b-radius-100">Login</a>
+        <a href="#" class="txt-font-1 mg-right-05 bg-transparent white hover-bg-nav2-dark fade pd-h-2 pd-v-05 b-radius-100">Sign in</a>
+    </div>
+    
+    </nav>
+    
+    </div>
+    
+    <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+        <div class="flex pd-1">
+            <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+            <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+            <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+        </div>
+    
+        <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+          </svg>
+    
+          <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+          </svg>
+    
+          <p class="txt-center white" id="copiar1">
+            <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+        </p>
+    
+    </div>
+    </main>
+
+
+    <main id="nav3" class="op-0 none fade">
+
+        <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+        
+        <nav class="w-full-100 h-4 bg-red flex v-center-row">
+        
+        <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+            <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+            <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+            <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+            <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+            <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+        
+        </div>
+        
+        <div class="w-81 flex v-center-row txt-center ctr auto relative">
+            <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+            <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+        </div>
+        
+        <div class="w-100 flex v-center-row txt-center ctr auto">
+            <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+            <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+        </div>
+        
+        </nav>
+        
+        </div>
+        
+        <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+            <div class="flex pd-1">
+                <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+            </div>
+        
+            <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+              </svg>
+        
+              <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+              </svg>
+        
+              <p class="txt-center white" id="copiar1">
+                <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+            </p>
+        
+        </div>
+        </main>
+
+        <main id="nav4" class="op-0 none fade">
+
+            <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+            
+            <nav class="w-full-100 h-4 bg-red flex v-center-row">
+            
+            <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+            
+            </div>
+            
+            <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </div>
+            
+            <div class="w-100 flex v-center-row txt-center ctr auto">
+                <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+            </div>
+            
+            </nav>
+            
+            </div>
+            
+            <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                <div class="flex pd-1">
+                    <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                    <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                    <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                </div>
+            
+                <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+            
+                  <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+            
+                  <p class="txt-center white" id="copiar1">
+                    <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                </p>
+            
+            </div>
+            </main>
+
+            <main id="nav5" class="op-0 none fade">
+
+                <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                
+                <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                
+                <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                    <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                    <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                
+                </div>
+                
+                <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                    <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </div>
+                
+                <div class="w-100 flex v-center-row txt-center ctr auto">
+                    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                </div>
+                
+                </nav>
+                
+                </div>
+                
+                <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                    <div class="flex pd-1">
+                        <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                        <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                        <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                    </div>
+                
+                    <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                      </svg>
+                
+                      <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                      </svg>
+                
+                      <p class="txt-center white" id="copiar1">
+                        <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                    </p>
+                
+                </div>
+                </main>
+
+                <main id="nav6" class="op-0 none fade">
+
+                    <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                    
+                    <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                    
+                    <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                        <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                        <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                    
+                    </div>
+                    
+                    <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                        <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </div>
+                    
+                    <div class="w-100 flex v-center-row txt-center ctr auto">
+                        <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                        <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                    </div>
+                    
+                    </nav>
+                    
+                    </div>
+                    
+                    <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                        <div class="flex pd-1">
+                            <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                            <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                            <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                        </div>
+                    
+                        <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                          </svg>
+                    
+                          <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                          </svg>
+                    
+                          <p class="txt-center white" id="copiar1">
+                            <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                        </p>
+                    
+                    </div>
+                    </main>
+
+                    <main id="nav7" class="op-0 none fade">
+
+                        <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                        
+                        <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                        
+                        <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                            <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                            <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                            <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                            <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                            <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                        
+                        </div>
+                        
+                        <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                            <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                        </div>
+                        
+                        <div class="w-100 flex v-center-row txt-center ctr auto">
+                            <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                            <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                        </div>
+                        
+                        </nav>
+                        
+                        </div>
+                        
+                        <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                            <div class="flex pd-1">
+                                <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                                <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                                <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                            </div>
+                        
+                            <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                              </svg>
+                        
+                              <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                              </svg>
+                        
+                              <p class="txt-center white" id="copiar1">
+                                <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                            </p>
+                        
+                        </div>
+                        </main>
+
+
+                        <main id="nav8" class="op-0 none fade">
+
+                            <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                            
+                            <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                            
+                            <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                                <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                                <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                                <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                                <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                                <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                            
+                            </div>
+                            
+                            <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                                <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </div>
+                            
+                            <div class="w-100 flex v-center-row txt-center ctr auto">
+                                <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                                <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                            </div>
+                            
+                            </nav>
+                            
+                            </div>
+                            
+                            <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                                <div class="flex pd-1">
+                                    <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                                    <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                                    <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                                </div>
+                            
+                                <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                  </svg>
+                            
+                                  <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                  </svg>
+                            
+                                  <p class="txt-center white" id="copiar1">
+                                    <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                                </p>
+                            
+                            </div>
+                            </main>
+
+                            <main id="nav9" class="op-0 none fade">
+
+                                <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                                
+                                <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                                
+                                <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                                    <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                                    <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                                    <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                                
+                                </div>
+                                
+                                <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                                    <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </div>
+                                
+                                <div class="w-100 flex v-center-row txt-center ctr auto">
+                                    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                                    <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                                </div>
+                                
+                                </nav>
+                                
+                                </div>
+                                
+                                <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                                    <div class="flex pd-1">
+                                        <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                                        <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                                        <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                                    </div>
+                                
+                                    <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                      </svg>
+                                
+                                      <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                      </svg>
+                                
+                                      <p class="txt-center white" id="copiar1">
+                                        <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                                    </p>
+                                
+                                </div>
+                                </main>
+
+                                <main id="nav10" class="op-0 none fade">
+
+                                    <div class="w-full-100 h-auto mg-top-6 flex ctr txt-center">
+                                    
+                                    <nav class="w-full-100 h-4 bg-red flex v-center-row">
+                                    
+                                    <div class="w-100 flex v-center-row txt-center mg-right-3 ctr">
+                                        <img src="img/logo-white.png" class="w-2 mg-right-3 mg-left-5" alt="logotipo">
+                                        <a href="#" class="txt-font-1 linked-white white mg-right-1-05">Home</a>
+                                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">Assets</a>
+                                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">Examples</a>
+                                        <a href="#" class="txt-font-1 link-white white mg-right-1-05">About</a>
+                                    
+                                    </div>
+                                    
+                                    <div class="w-81 flex v-center-row txt-center ctr auto relative">
+                                        <input type="text" class="input_animated1 pd-left-1 pd-right-3 pd-v-05 b-radius-05 no-border no-outline w-18 op-0 fade">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer search_animated1 white w-1-01 absolute fade right-12 pd-right-06" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                          </svg>
+                                    </div>
+                                    
+                                    <div class="w-100 flex v-center-row txt-center ctr auto">
+                                        <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Login</a>
+                                        <a href="#" class="txt-font-1 black mg-right-1-05 bg-white hover-bg-blue10 fade pd-h-1 pd-v-05 b-radius-05">Sign in</a>
+                                    </div>
+                                    
+                                    </nav>
+                                    
+                                    </div>
+                                    
+                                    <div class="bg-console relative w-full-100 h-auto pd-bottom-3-02 ctr mg-top-2 mg-h-auto b-radius-05">
+                                        <div class="flex pd-1">
+                                            <div class="mg-03 bg-red b-radius-20 w-1 h-1"></div>
+                                            <div class="mg-03 bg-orange-default b-radius-20 w-1 h-1"></div>
+                                            <div class="mg-03 bg-green-default b-radius-20 w-1 h-1"></div>
+                                        </div>
+                                    
+                                        <svg onclick="copy1()" xmlns="http://www.w3.org/2000/svg" id="copiar" class="pointer absolute top-1 right-2 pd-top-02 white w-1 op-1 fade" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                          </svg>
+                                    
+                                          <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="pointer absolute top-1 right-2 pd-top-02 green4 w-1 op-0 fade" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                          </svg>
+                                    
+                                          <p class="txt-center white" id="copiar1">
+                                            <label class="blue-default">&lt;link</label> <label class="aqua">rel</label>=<label class="orange-default">"stylesheet"</label>  <label class="aqua">href</label>=<label class="orange-default">"planit/1.5/planit.css"</label><label class="blue-default">&gt;</label>
+                                        </p>
+                                    
+                                    </div>
+                                    </main>
+
+</main>
+
+<script src="syder.js"></script>
+
+</body>
+
+</html>
