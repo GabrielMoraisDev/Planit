@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planit.css">
+    <link rel="stylesheet" href="planit-full.css">
+    <link rel="stylesheet" href="planit-vw.css">
+    <link rel="stylesheet" href="planit-px.css">
+    <title>Planit - V1.0</title>
+</head>
+<body class="font1">
+
+    <header>
+
+        <nav class="fixed master-z-index top-0 bg-custom-gray-blue w-full-100 h-auto flex">
+            <ul class="w-full-100 flex mg-left-0 v-center-row mg-right-4"> 
+                <a href="index.html" class="white fade txt-font-09 mg-h-1"> <li> <img src="img/logo2.png" class="w-2 pd-top-05" alt=""> </li> </a>
+                <a href="#uses" class="white fade link-white txt-font-09 mg-h-1"> <li> Utilização </li> </a>
+                <a href="#docs" class="white fade link-white txt-font-09 mg-h-1"> <li> Documentação </li> </a>
+                <a href="#comp" class="white fade link-white txt-font-09 mg-h-1"> <li> Componentes </li> </a>
+                <a href="#comp" class="white fade link-white txt-font-09 mg-h-1"> <li> Exemplos </li> </a>
+         
+                <form class="w-full-100 flex mg-right-0 mg-right-4 righter f-right txt-right v-center-row"> 
+                  <button class="no-border transparent button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-1 white mg-right-05" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </button>
+                    <input id="search-input" class="input-default w-15 h-2 b-radius-05 pd-h-1 pd-v-01 txt-font-1" placeholder="Pesquise por componentes aqui...">
+                </form>
+
+            </ul>
+        </nav>
+
+    </header>
+
+<main class="mg-h-5">
+
+<div class="h-8"></div>
+
+<div id="search-results">
+
+    <div id="n" class="mg-top-5 txt-ctr txt-font-2 w-40 auto ctr dark-blue4">Ops, nada encontrado, tente pesquisar por componentes ou códigos <br><label class="custom-font">(Apenas as NAVS estão em construção no momento!).</label> 
+    </div>
+
+ <div class="w-full-100 h-25 ctr auto txt-center">
+
+    <img src="img/logo2.png" class="w-10" alt="">
+    <h1 class="txt-font-2 dark-blue">Bem-vindo ao Planit Css! </h1>
+   <p id="uses" class="txt-ctr custom-font w-40 auto ctr dark-blue4">Css personalizado em desenvolvimento para facilitar a criação de elementos html. Veja nessa página a documentação, instruções e componentes de exemplo para utilização!</p>
+
+ </div>
+
+<div class="w-full-100 mg-v-2 txt-center auto ctr">
+    <h4 class="txt-font-1 mg-bottom-2">Versão 1.0 beta - Planit Css</h4>
+</div>
+
+ <div class="w-full-100 h-25 ctr auto txt-center" >
+
+   <h1 class="dark-blue txt-font-2">Utilização </h1>
+   <p class="txt-ctr custom-font w-40 auto ctr dark-blue4">Para aproveitar todo o potencial do Planit Css, basta colar os links abaixo na sua página HTML!</p>
+
+<div class="ctr auto pd-top-2 pd-bottom-4 pd-h-3 b-radius-06 mg-top-1 bg-console txt-left w-50 h-auto">
+    <div class="flex w-full-100 txt-center">
+        <div class="w-full-100">
+            <div class="bg-blue7 b-radius-100 w-5 txt-font-1 pd-v-03"> HTML</div>
+        </div>
+        <div class="w-full-100" id="btn"> 
+            <div class="bg-blue7 pointer mg-right-0 righter f-right  b-radius-100 w-2 txt-font-1 pd-top-05 pd-bottom-01 pd-left-01 pd-right-01" onclick="copiado1()">
+                <span id="copiado1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-1" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+            </svg>
+            </span> 
+            </div>
+        </div>
+    </div>
+
+<div class="h-3"></div>
+
+    <label class="txt-font-1 txt-center blue9">
+        &lt;head&gt;
+        <label class="txt-font-09 blue9 underline"  id="docs">
+            &lt;link rel="stylesheet" type="text/css" href="http://192.168.1.251/css/morais.css"&gt;
+        </label>
+        &lt;/head&gt;
+    </label>
+
+    <label class="txt-font-1 txt-center blue9">
+        &lt;body&gt;
+        <label class="txt-font-09 blue9 underline"  id="docs">
+            &lt;script src="http://192.168.1.251/estudos/port/com/script.js"&gt;&lt;/script&gt;
+        </label>
+        &lt;/body&gt;
+    </label>
+
+</div>
+</div>
+
+
+<div class="w-full-100 h-25 ctr auto txt-center">
+
+    <h1 class="dark-blue txt-font-2">Documentação </h1>
+   <p class="txt-ctr custom-font w-55 auto ctr mg-bottom-2 dark-blue4">Versão ainda em testes! A versão 1.0 do Planit apresenta componentes e uma forma de utilização do css comum ao avançado. Conta com propriedades de altura, largura, isso disponível em escalas diferentes, de 0 a 100 e em unidades de medida como Pixels, Viewport e Porcent. Para aproveitar ao máximo esse framework simples, leia a documentação de instruções de uso logo abaixo!</p>
+
+   <hr class="w-50 mg-bottom-2">
+
+   <label class="custom-font">Tabela de largura (width):</label>
+
+
+   <ul>
+    <li class="custom-font">Tamanho em Pixels -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">w-px-1</button></li>
+    <li class="custom-font">Tamanho em Viewport - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">w-1</button></li>
+    <li class="custom-font">Tamanho em Porcent - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">w-full-1</button></li>
+   </ul>
+   <hr class="w-50">
+   <ul>
+   <li class="txt-center auto ctr w-50 custom-font">Para atribuir um tamanho a algum elemento HTML, basta colocar qualquer classe dessa, porém é possível substituir o valor desse tamanho, e esse valor vai de 0 até 100, sendo o valor de 0 até 1 os seguintes: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 1. E os valores de 1 a 100 os seguintes 1, 2, 3 ... 100. <br> Veja um exemplo com 3vw de tamanho: 
+    &lt;div class="w-3"&gt;&lt;/div&gt;</li>
+    </ul>
+
+
+   <hr class="w-50 mg-bottom-2">
+
+   <label class="custom-font">Tabela de fontes (font-size):</label>
+
+
+   <ul>
+    <li class="custom-font">Tamanho em Pixels -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">txt-font-px-1</button></li>
+    <li class="custom-font">Tamanho em Viewport - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">txt-font-1</button></li>
+    <li class="custom-font">Tamanho em Porcent - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">txt-font-full-1</button></li>
+   </ul>
+   <hr class="w-50">
+   <ul>
+   <li class="txt-center auto ctr w-50 custom-font">Exemplo: 
+    &lt;p class="txt-font-px-15"&gt; Eu terei 15px de tamanho! &lt;/p&gt;</li>
+    </ul>
+
+    <hr class="w-50 mg-bottom-2">
+
+    <label class="custom-font">Tabela de margem (margin):</label>
+ 
+ 
+    <ul>
+     <li class="custom-font">Tamanho em Pixels -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-px-1</button></li>
+     <li class="custom-font">Tamanho em Viewport - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-1</button></li>
+     <li class="custom-font">Tamanho em Porcent - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-full-1</button></li>
+    </ul>
+
+    <ul>
+        <li class="custom-font">Aplicando margem esquerda e direita -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-h-px-34</button></li>
+        <li class="custom-font">Aplicando margem ao topo e abaixo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-v-full-50</button></li>
+        <li class="custom-font">Margem automática -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">auto</button></li>
+    </ul>
+
+    <ul>
+        <li class="custom-font">Aplicando margem esquerda -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-left-px-3</button></li>
+        <li class="custom-font">Aplicando margem direita -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-right-15</button></li>
+        <li class="custom-font">Aplicando margem ao topo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-top-full-29</button></li>
+        <li class="custom-font">Aplicando margem abaixo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">mg-bottom-1</button></li>
+    </ul>
+
+    <hr class="w-50">
+    <ul>
+    <li class="txt-center auto ctr w-50 custom-font">Exemplo: 
+     &lt;p class="txt-font-1 mg-top-0"&gt; Eu terei 0 de margem no topo! &lt;/p&gt;</li>
+     </ul>
+
+     <hr class="w-50 mg-bottom-2">
+
+     <label class="custom-font">Tabela de espaçamento (padding):</label>
+  
+  
+     <ul>
+      <li class="custom-font">Tamanho em Pixels -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-px-1</button></li>
+      <li class="custom-font">Tamanho em Viewport - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-1</button></li>
+      <li class="custom-font">Tamanho em Porcent - <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-full-1</button></li>
+     </ul>
+ 
+     <ul>
+         <li class="custom-font">Aplicando espaçamento esquerda e direita -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-h-px-34</button></li>
+         <li class="custom-font">Aplicando espaçamento ao topo e abaixo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-v-full-50</button></li>
+     </ul>
+ 
+     <ul>
+         <li class="custom-font">Aplicando espaçamento esquerda -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-left-px-3</button></li>
+         <li class="custom-font">Aplicando espaçamento direita -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-right-15</button></li>
+         <li class="custom-font">Aplicando espaçamento ao topo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-top-full-29</button></li>
+         <li class="custom-font">Aplicando espaçamento abaixo -  <button class="custom-font btn bg-transparent btn-radius mg-bottom-07">pd-bottom-1</button></li>
+     </ul>
+ 
+     <hr class="w-50" id="comp">
+     <ul>
+     <li class="txt-center auto ctr w-50 custom-font">Exemplo: 
+      &lt;p class="pd-px-15 txt-font-px-15"&gt; Eu terei 15px de espaçamento! &lt;/p&gt;</li>
+      </ul>
+
+      <hr class="w-50">
+
+      <h1 class="txt-font-2 mg-top-7">Componentes</h1>
+      <hr class="w-50">
+
+
+      <h1 class="txt-font-1 mg-v-2">Navbar fixada padrão</h1>
+
+      <nav class="top-0 bg-custom-gray-blue2 w-full-100 h-5 flex">
+        <ul class="w-full-100 flex mg-left-0 v-center-row mg-right-4"> 
+            <a href="#" class="white fade txt-font-09 mg-h-1"> <li> <img src="img/logo2.png" class="w-2 pd-top-05" alt=""> </li> </a>
+            <a href="#" class="white fade link-white txt-font-09 mg-h-1"> <li> Início </li> </a>
+            <a href="#" class="white fade link-white txt-font-09 mg-h-1"> <li> Produtos </li> </a>
+            <a href="#" class="white fade link-white txt-font-09 mg-h-1"> <li> Contato </li> </a>
+            <a href="#" class="white fade link-white txt-font-09 mg-h-1"> <li> Sobre </li> </a>
+     
+            <form class="w-full-100 flex mg-right-0 mg-right-4 righter f-right txt-right v-center-row"> 
+            <div class="no-border transparent">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-1 white mg-right-05" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                </div>
+                <input id="search-input" class="input-default w-15 h-2 b-radius-05 pd-h-1 pd-v-01 txt-font-1" placeholder="Pesquise por componentes aqui...">
+            </form>
+
+            <a href="" class="dark-blue fade btn-custom btn-hover bg-blue5 txt-font-09 mg-h-02"> <li> Entrar </li> </a>
+            <a href="" class="dark-blue fade btn-custom btn-hover bg-blue7 txt-font-09 mg-h-02"> <li> Cadastrar </li> </a>
+
+        </ul>
+    </nav>
+
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Navbar com animação simples de pesquisa (para fixar, basta trocar a classe "relative" para "fixed" na tag &lt;nav&gt;)</h1>
+
+<nav class="bg-red-gradient w-full-100 h-auto pd-bottom-08 pd-top-0 flex v-center-row relative">
+
+    <div class="w-full-100 mg-top-07 mg-left-09 txt-center">
+        <a href="#" class="linked black fade txt-font-09 mg-h-1"> Início </a>
+        <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Ranking </a>
+        <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Destaques </a>
+        <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Sobre </a>
+    </div>
+
+    <form class="w-full-100 flex ctr auto pd-top-09 v-center-row">
+        <div class="no-border transparent">
+            <label for="searchy-input">
+                <svg onclick="search_style_hover()" id="svg_search" xmlns="http://www.w3.org/2000/svg"
+                    class="pointer fade pd-05 w-1 black mg-right-05 absolute left-full-48 top-1-01"
+                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </label>
+        </div>
+        <input id="searchy-input"
+            class="fade pointer max-z-index txt-upper no-border mg-left-1 black no-outline bg-transparent w-25 h-2 b-radius-100 pd-h-1 pd-v-01 txt-font-09"
+            autocomplete="off" onclick="search_style_hover()" onfocusout="check_search_style_hover()">
+    </form>
+
+    <div class="w-full-100 mg-top-07 mg-right-09 txt-center ctr inline">
+        <a href="#" class="black fade btn-custom btn-hover bg-orange7 txt-font-09 mg-h-05"> Login </a>
+        <a href="#" class="black fade btn-custom btn-hover bg-orange9 txt-font-09 mg-h-05"> Criar conta </a>
+    </div>
+</nav>
+
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Navbar fixada com slider em links</h1>
+
+<nav class="top-0 bg-custom-gray-purple w-full-100 h-4 flex">
+    <div class="mg-left-5 mg-top-04 f-left"> <img src="img/logo-white.png" onclick="link3()" class="w-2 mg-top-08" alt=""></div>
+    <ul class="w-full-80 flex mg-left-0 ctr v-center-row txt-center"> 
+        <li class="pointer white hover-scale fade txt-font-09 mg-h-1" onclick="link_left()"><svg xmlns="http://www.w3.org/2000/svg" class="w-1 pd-top-01" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 15">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg> </li>
+        <a href="#none" id="link1" onclick="link1()" class="gray7 hover-scale fade w-5 txt-font-06 mg-h-2"> <li> Mais </li> </a>
+        <a href="#none" id="link2" onclick="link2()" class="gray7 hover-scale fade w-5 txt-font-08 mg-h-2"> <li> Produtos </li> </a>
+        <a href="#none" id="link3" onclick="link3()" class="white hover-scale fade w-5 txt-font-1 mg-h-2"> <li> Início </li> </a>
+        <a href="#none" id="link4" onclick="link4()" class="gray7 hover-scale fade w-5 txt-font-08 mg-h-2"> <li> Contato </li> </a>
+        <a href="#none" id="link5" onclick="link5()" class="gray7 hover-scale fade w-5 txt-font-06 mg-h-2"> <li> Sobre </li> </a>
+        <li class="pointer white hover-scale fade txt-font-09 mg-h-1" onclick="link_right()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-1 pd-top-01" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 15">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg> </li> 
+    </ul>
+    <div class="mg-right-5 mg-top-1 f-right flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-1 white mg-right-05 mg-bottom-07" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg> 
+        <input id="search-input" class="input-default black w-15 h-2 b-radius-100 pd-h-1 txt-font-1" placeholder="Pesquise por componentes aqui..."> 
+    </div>
+</nav>
+
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Dropdown - link <br> (LIMITE DE 100 "Dropdown - link" POR PÁGINA!)</h1>
+
+<div class="flex auto ctr">
+
+    <main class="pointer pd-bottom-01 mg-left-1 mg-right-11 mg-top-05 mg-bottom-3">
+        <div onclick="dropdown1()" id="dropdown1" class="relative dp">
+            <div class="absolute solid-op bg-custom-gray-blue top-0 b-w-02 white b-solid b-white btn white z-index-9 h-auto w-auto pd-right-2 fade">
+              <div class="flex">
+                <label class="pointer one-row fade txt-font-1 mg-h-05"> Dropdown link<svg xmlns="http://www.w3.org/2000/svg" class="absolute mg-top-px-4 w-1 mg-left-05 animation-rotate rotate-90" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </label>
+              </div>
+            </div>
+      
+              <span class="b-w-01 btn b-solid b-white op-0 txt-center w-13 mg-top-px-01 btn top-px-0 absolute bg-custom-gray-blue pd-v-04 b-radius-07 z-index-10 fade inline">  
+               <p> <a href="#" class="white link-white">Meu id é "dropdown2", já que sou um <br> segundo dropdown</a> </p>
+               <p> <a href="#" class="white link-white">Meu onclick é "dropdown2()", pois sou um <br> segundo dropdown </a> </p>
+      
+              </span>
+      
+        </div>
+      </main>
+    
+      <main class="pointer pd-bottom-01 mg-left-1 mg-right-12 mg-top-05 mg-bottom-3">
+        <div onclick="dropdown2()" id="dropdown2" class="relative dp">
+            <div class="absolute solid-op bg-custom-gray-purple top-0 b-w-02 white b-solid b-white btn white z-index-9 h-auto w-auto pd-right-2 fade">
+              <div class="flex">
+                <label class="pointer one-row fade txt-font-1 mg-h-05"> Dropdown link 2<svg xmlns="http://www.w3.org/2000/svg" class="absolute mg-top-px-4 w-1 mg-left-05 animation-rotate rotate-90" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </label>
+              </div>
+            </div>
+      
+              <span class="b-w-01 btn b-solid b-white op-0 txt-center w-13 mg-top-px-01 btn top-px-0 absolute bg-custom-gray-purple pd-v-04 b-radius-07 z-index-10 fade inline">  
+               <p> <a href="#" class="white link-white">Meu id é "dropdown2", já que sou um <br> segundo dropdown</a> </p>
+               <p> <a href="#" class="white link-white">Meu onclick é "dropdown2()", pois sou um <br> segundo dropdown </a> </p>
+      
+              </span>
+      
+        </div>
+      </main>
+  
+  </div>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Dropdown - button <br> (LIMITE DE 100 "Dropdown - button" POR PÁGINA!)</h1>
+
+<div class="flex">
+
+    <main class="pointer auto pd-right-12 pd-bottom-0 mg-top-05 mg-bottom-3">
+
+        <form action="" method="">
+    
+        <div onclick="dropbtn1()" id="dropbtn1" class="dp-btn relative dp">
+            <div class="absolute solid-op bg-gray top-0 b-w-02 white b-solid b-white btn white max-z-index h-auto w-auto pd-right-1 fade">
+              <div class="flex">
+                <label class="label-drop pointer one-row fade txt-font-1 mg-h-05"> Dropdown button </label><svg xmlns="http://www.w3.org/2000/svg" class="white mg-top-px-0 w-1 mg-left-05 animation-rotate rotate-90" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                
+              </div>
+            </div>
+      
+              <span class="one-row b-w-01 btn b-solid b-white op-0 w-auto txt-center mg-top-px-01 btn top-px-0 absolute bg-gray pd-v-04 b-radius-07 master-z-index fade inline">  
+               <button type="submit" name="btn-drop1" class="btn mg-bottom-01 mg-top-02 font1 fade bg-blue6 btn-default gray">Primeiro button</button><br>
+               <button type="submit" name="btn-drop1" class="btn mg-bottom-01 mg-top-02 font1 fade bg-blue6 btn-default gray">Segundo button</button> <br>
+               <button type="submit" name="btn-drop1" class="btn mg-bottom-01 mg-top-02 font1 fade bg-blue6 btn-default gray">Terceiro button</button><br>
+              </span>
+      
+        </div>
+    
+      </form>
+    
+      </main>
+  
+  </div>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Formulário padrão </h1>
+
+    <main class="mg-h-5 bg-gray9 pd-v-5 pd-h-5 gray">
+
+
+        <div class="flex v-center-row">
+
+            <div class="w-50 mg-right-1 txt-left"><label for="input1" class="txt-font-1">Input 1:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input2" class="txt-font-1">Input 2:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input2" type="text" placeholder="Something here">
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input3" class="txt-font-1">Input 3: </label></div>
+            <select class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input3" type="text" placeholder="Something here">
+
+                <option value="1">Something here</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+
+            </select>
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input4" class="txt-font-1">Input 4: </label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input4" type="text" placeholder="Something here">
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input5" class="txt-font-1">Input 5: </label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input5" type="text" placeholder="Something here">
+
+        </div>
+
+        <div class="mg-top-2 flex v-center-row">
+
+          <div class="w-50 mg-right-1 txt-left"><label for="input6" class="txt-font-1">Input 6:</label></div>
+          <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input6" type="text" placeholder="Something here">
+
+          <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input7" class="txt-font-1">Input 7:</label></div>
+          <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input7" type="text" placeholder="Something here">
+
+          <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input8" class="txt-font-1">Input 8: </label></div>
+          <select class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input8" type="text" placeholder="Something here">
+
+              <option value="1">Something here</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+
+          </select>
+
+          <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input9" class="txt-font-1">Input 9: </label></div>
+          <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input9" type="text" placeholder="Something here">
+
+      </div>
+
+        <div class="mg-top-2 flex v-center-row">
+
+            <div class="w-50 mg-right-1 txt-left"><label for="input10" class="txt-font-1">Input 10:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input10" type="text" placeholder="Something here">
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input11" class="txt-font-1">Input 11:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input11" type="text" placeholder="Something here">
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input12" class="txt-font-1">Input 12:</label></div>
+            <select class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input12" type="text" placeholder="Something here">
+
+                <option value="1">Something here</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+
+            </select>
+
+        </div>
+
+        <div class="mg-top-2 flex v-center-row">
+
+            <div class="w-50 mg-right-1 txt-left"><label for="input13" class="txt-font-1">Input 13:</label></div>
+            <select class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input13" type="text" placeholder="Something here">
+
+                <option value="1">Something here</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+
+            </select>
+
+            <div class="w-50 mg-right-1 mg-left-1 txt-center"><label for="input14" class="txt-font-1">Input 14:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input14" type="text" placeholder="Something here">
+
+        </div>
+
+        <div class="mg-top-2 flex v-center-row">
+
+            <div class="w-50 mg-right-1 txt-left"><label for="input15" class="txt-font-1">Input 15:</label></div>
+            <input class="w-full-100 pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input15" type="text" placeholder="Something here">
+
+        </div>
+
+    </main>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Formulário padrão 2</h1>
+
+<main class="mg-h-0 bg-gray9 pd-v-5 pd-h-5 gray">
+
+    <div class="flex mg-top-1 v-center-row">
+
+        <div class="w-px-100 mg-right-1"><label for="input1" class="txt-font-1 ">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+        <div class="w-px-100 mg-right-1 mg-left-2"><label for="input1" class="txt-font-1 txt-center">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+        <div class="w-px-100 mg-right-1 mg-left-2"><label for="input1" class="txt-font-1 txt-center">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+    </div>
+
+    <div class="flex mg-top-1 v-center-row">
+
+        <div class="w-px-100 mg-right-1"><label for="input1" class="txt-font-1 ">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+        <div class="w-px-100 mg-right-1 mg-left-2"><label for="input1" class="txt-font-1 txt-center">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+    </div>
+
+    <div class="flex mg-top-1 v-center-row">
+
+        <div class="w-px-100 mg-right-1"><label for="input1" class="txt-font-1 ">Input example:</label></div>
+        <input class="pd-h-1 pd-v-08 no-border no-outline gray txt-font-1" id="input1" type="text" placeholder="Something here">
+
+    </div>
+
+</main>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Tabela padrão</h1>
+
+    <table class="table">
+        <tr class="tr">
+          <th class="txt-center pd-05 th">Coluna 1</th>
+          <th class="txt-center pd-05 th">Coluna 2</th>
+          <th class="txt-center pd-05 th">Coluna 3</th>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 1</td>
+          <td class="txt-center pd-05 td">Dado 2</td>
+          <td class="txt-center pd-05 td">Dado 3</td>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 4</td>
+          <td class="txt-center pd-05 td">Dado 5</td>
+          <td class="txt-center pd-05 td">Dado 6</td>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 7</td>
+          <td class="txt-center pd-05 td">Dado 8</td>
+          <td class="txt-center pd-05 td">Dado 9</td>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 1</td>
+          <td class="txt-center pd-05 td">Dado 2</td>
+          <td class="txt-center pd-05 td">Dado 3</td>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 4</td>
+          <td class="txt-center pd-05 td">Dado 5</td>
+          <td class="txt-center pd-05 td">Dado 6</td>
+        </tr>
+        <tr class="tr">
+          <td class="txt-center pd-05 td">Dado 7</td>
+          <td class="txt-center pd-05 td">Dado 8</td>
+          <td class="txt-center pd-05 td">Dado 9</td>
+        </tr>
+      </table>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Login padrão</h1>
+
+<main class="mg-h-5 mg-top-1 h-auto w-auto auto ctr txt-center">
+
+    <form class="white w-15 h-auto bg-dark-blue-gradient auto ctr txt-center b-radius-1 pd-h-5 pd-top-2 pd-bottom-1 auto ctr txt-center">
+
+        <img src="img/logo-white.png" class="w-5 mg-bottom-1" alt=""><br>
+
+        <label for="input1" class="txt-font-09">Login</label>
+        <input class="txt-center input-default pd-v-06 pd-h-08 b-radius-05 w-auto mg-bottom-2 hover-scale fade" id="input1" type="text">
+
+        <label for="input1" class="txt-font-09">Password</label>
+        <input class="txt-center input-default pd-v-05 pd-h-08 b-radius-05 w-auto mg-bottom-3 hover-scale fade" id="input1" type="password">
+
+        <button class="pointer btn bg-blue6 hover-bg-white fade auto ctr txt-center input-default w-10 mg-bottom-2" id="input1" type="submit">Submit</button>
+
+    </form>
+
+
+</main>
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Botões padrão</h1>
+
+<div class="flex auto txt-center ctr">
+
+<button type="submit" class="mg-h-05 btn txt-font-1 hover-bg-dark-blue hover-white no-border w-auto bg-gray9 fade">Btn estilizado</button>
+<button type="submit" class="mg-h-05 pd-v-05 txt-font-1 btn btn-slider bg-gray9 black no-border"><span>Btn transition</span></button>
+
+</div>
+
+
+
+<hr class="mg-2">
+
+<h1 class="txt-font-1 mg-v-2">Botões padrão</h1>
+
+<div class="flex auto txt-center ctr">
+
+<button type="submit" class="mg-h-05 btn txt-font-1 hover-bg-dark-blue hover-white no-border w-auto bg-gray9 fade">Btn estilizado</button>
+<button type="submit" class="mg-h-05 txt-font-1 btn btn-slider bg-gray9 black no-border b-radius-1"><span>Btn transition</span></button>
+
+</div>
+
+
+
+
+
+<div class="h-100"></div>
+
+
+</div>
+</div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- -->

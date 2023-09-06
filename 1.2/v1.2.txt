@@ -1,0 +1,28 @@
+planit.css
+  Contém a base, cores e propriedades genéricas 
+  do framework e a partir da 
+  palavra 'mobile' ou 'tablet' antes de qualquer
+  classe, a página ganha responsividade.
+
+planit-full.css
+  Agrega a unidade de medida %.
+
+planit-responsive-full.css
+  A partir da palavra 'mobile' ou 'tablet' antes de 
+  qualquer classe, a página ganha responsividade.
+
+planit-px.css
+  Contém unidades de medida em pixels.
+
+planit-responsive-px.css
+  Ganha responsividade ao escrever 'mobile' ou 
+  'tablet' antes das classes.
+
+planit-vw.css
+  Contém o arquivo mais pesado, pois tem unidade
+  de medida em VW com mais especificações e 
+  tamanhos.
+
+planit-responsive-vw.css
+  Segue a medida de responsividade ao colocar a 
+  palavra 'mobile' ou 'tablet' antes das classes. 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="planit.css">
+    <link rel="stylesheet" type="text/css" href="planit-vw.css">
+    <link rel="stylesheet" type="text/css" href="planit-full.css">
+    <title>Exemplo</title>
+</head>
+
+<body class="font1 bg-img-standard white">
+
+<header>
+
+    <div id="menue" onclick="close_menu()" class="h-vh-100 bg-console w-full-100 none mobile-block fixed op-0 fade max-z-index ctr txt-center auto white">
+
+       <a href="#" class="mg-40 linked-white"><div class="linked-white master-z-index ctr txt-center auto white mg-top-35 absolute ">LINK1</div></a>
+       <a href="#" class="mg-40 link"><div class="link master-z-index ctr txt-center auto white mg-top-25 absolute ">LINK2</div></a>
+       <a href="#" class="mg-40 link"><div class="link master-z-index ctr txt-center auto white mg-top-25 absolute ">LINK3</div></a>
+       <a href="#" class="mg-40 link"><div class="link master-z-index ctr txt-center auto white mg-top-25 absolute ">LINK4</div></a>
+
+    </div>
+
+    <div class="fixed z-index-10 w-full-100 h-4 pd-v-02 bg-dark-blue-gradient mobile-h-18"></div>
+
+    <nav id="navbar" class="fade top-0 bg-img-standard2 w-full-100 h-auto pd-bottom-08 pd-top-0 flex v-center-row fixed master-z-index mobile-h-17">
+        
+        <img src="img/logo-white.png" class="mg-left-6 w-2 relative top-04 mg-right-7 f-right mobile-none" alt=""> 
+
+        <div class="w-full-70 mg-top-07 txt-center mg-left--5 mobile-none">
+
+            <a href="#" class="linked-white white fade txt-font-09 mg-h-1"> Início </a>
+            <a href="#" class="link-gray gray8 fade txt-font-09 mg-h-1">
+                Produtos
+            </a>
+            <a href="#" class="link-gray gray8 fade txt-font-09 mg-h-1">
+                Destaques
+            </a>
+            <a href="#" class="link-gray gray8 fade txt-font-09 mg-h-1"> Sobre </a>
+        </div>
+        <form class="w-full-100 flex ctr auto pd-top-09 v-center-row mobile-none">
+            <div class="no-border transparent">
+                <label for="searchy-input">
+                    <svg onclick="search_style_hover()" id="svg_search" xmlns="http://www.w3.org/2000/svg"
+                        class="scale-element pointer max-z-index fade pd-05 w-1 white mg-right-05 absolute left-full-48 top-1-01"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </label>
+            </div>
+            <input id="searchy-input" class="hover-scale-element fade pointer max-z-index no-border black no-outline bg-transparent w-19 h-2 b-radius-5 pd-left-1 pd-right-3 pd-v-01 txt-font-09"
+                autocomplete="off" onclick="search_style_hover2()" onfocusout="check_search_style_hover2()" />
+        </form>
+
+        <div class="w-full-100 mg-top-07 mg-right-09 txt-center ctr inline">
+
+            <a href="#" class="white fade b-radius-05 btn btn-outline-white bg-console txt-font-09 mg-left--6 mg-right-4 mobile-none">
+                Download example
+            </a>
+            <a href="#" class="white fade b-radius-100 btn btn-outline-white bg-dark-blue-green2 txt-font-09 mg-h-05 mobile-none">
+                Login
+            </a>
+            <a href="#" class="white fade b-radius-100 btn btn-outline-white bg-dark-blue-green txt-font-09 mg-h-05 mobile-none">
+                Criar conta
+            </a>
+
+              <a href="#" onclick="close_menu()" id="close" class="absolute none op-0 tablet-none mobile-block mobile-w-12 mobile-h-12 mg-left-5 pd-top-02 white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+
+           <a href="#" onclick="open_menu()" id="open" class="none op-1 tablet-none mobile-block mobile-w-12 mobile-h-12 mg-left-5 pd-top-02 white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </a>
+
+        </div>
+    </nav>
+</header>
+
+<main class="relative pd-top-5 w-full-100 bg-img-standard3 z-index-15 h-28 mobile-h-80 mobile-pd-top-10 mobile-pd-bottom-40">
+
+<div class="ctr auto txt-center mg-top-1 mobile-mg-top-0">
+    <img src="img/logo-white.png" class="w-15 mobile-w-35 mobile-mg-top-7" alt="">
+    <h1 class="txt-font-2 mobile-txt-font-7 mobile-mg-top--3">Title example</h1>
+    <p class="txt-center auto w-70 txt-font-1 white mobile-txt-font-4 mobile-mg-top--3">Use esse exemplo para criar o seu próprio site! Ajuste estilos, troque cores, faça do seu próprio jeito, tudo com o framework Planit, você vai se surpreender! para ter acesso ao código fonte desse exemplo, clique <a href="" class="black bg-white mg-left-02 pd-h-07 pd-v-0 b-radius-2 hover-bg-blue-gradient fade mobile-pd-v-03 mobile-pd-h-2"> AQUI </a></p>
+</div>
+
+</main>
+
+<main class="mg-h-10 pd-2">
+    <div class="flex auto ctr mobile-inline">
+        <div class="b-radius-07 pd-v-05 pd-h-2 w-20 h-20 bg-img-default bg-console mg-right-2 hover-scale2 fade mobile-w-25 mobile-mg-left--2 mobile-mg-top--7 mobile-auto mobile-w-full-100 mobile-h-70 mobile-b-radius-7">
+            <h1 class="txt-left txt-font-2 mg-top-5 mg-bottom--2 mobile-txt-font-7 mobile-mg-top-15 mobile-mg-left-5">Walking on fire</h1>
+            <p class="mg-bottom--2 txt-font-1 mobile-txt-font-5 mobile-mg-left-5">Este conteúdo pode ser personalizado de acordo com sua necessidade</p>
+            <img src="img/default1.jpg">
+        </div>
+
+        <div class="b-radius-07 pd-v-05 pd-h-2 w-20 h-20 bg-img-default bg-console hover-scale2 fade mobile-w-25 mobile-mg-left--2 mobile-auto mobile-mg-top-10 mobile-w-full-100 mobile-h-70 mobile-b-radius-7">
+            <h1 class="txt-left txt-font-2 mg-top-5 mg-bottom--2 mobile-txt-font-7 mobile-mg-top-15 mobile-mg-left-5">Lighter Space</h1>
+            <p class="mg-bottom--2 txt-font-1 mobile-txt-font-5 mobile-mg-left-5">Este conteúdo pode ser personalizado de acordo com sua necessidade</p>
+            <img src="img/default2.jpg">
+        </div>
+
+        <div class="b-radius-07 pd-v-05 pd-h-2 w-20 h-20 bg-img-default bg-console mg-left-2 hover-scale2 fade mobile-mg-left--2 mobile-auto mobile-mg-top-10 mobile-w-25 mobile-auto mobile-w-full-100 mobile-h-70 mobile-b-radius-7">
+            <h1 class="txt-left txt-font-2 mg-top-5 mg-bottom--2 mobile-mg-top-15 mobile-txt-font-7 mobile-mg-left-5">Master Sword</h1>
+            <p class="mg-bottom--2 txt-font-1 mobile-txt-font-5  mobile-mg-left-5">Este conteúdo pode ser personalizado de acordo com sua necessidade</p>
+            <img src="img/default3.jpg">
+        </div>
+    </div>
+
+
+    <div class="ctr auto mg-top-6 mg-h-3">
+        <h1 class="txt-center txt-font-2 mg-bottom-2 mobile-txt-font-9">A title again!</h1>
+    
+    <div class="flex mobile-inline">
+    <p class="w-full-100 txt-font-1-02 mobile-txt-font-4 mobile-txt-center">Imagine aqui um texto de exemplo, com palavras bonitas e inspiradoras, palavras que prendem a atenção do usuário e fazem a página mais informativa. Um texto que trás ênfase ao conteúdo, que supera as expectativas do leitor, que faz a diferença e muda o jeito de pensar da pessoa que o lê. É como uma brisa suave. O texto mais bonito do mundo
+        é aquele que fala de amor,
+        com sentimentos,
+        com a sua voz e o seu talento.</p>
+    
+    <div class="b-radius-07 pd-v-05 pd-h-2 w-full-100 h-18 bg-img-default2 bg-console mg-left-3 fade mobile-mg-left--2 mobile-h-50 mobile-b-radius-7">
+        <img src="img/img-default.png">
+    </div>
+    
+    </div>
+    </div>
+
+</main>
+
+
+
+    <main class="h-100"></main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

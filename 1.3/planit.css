@@ -1,0 +1,1869 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{ margin: 0; padding: 0; }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.th, .td {
+    border: 1px solid #ddd;
+}
+  
+.th {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+  
+.tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.font1{font-family: 'Poppins', sans-serif;}
+.font2{font-family: 'Noto Sans', sans-serif;}
+.font3{font-family: Arial, Helvetica, sans-serif;}
+.font4{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.ctr{
+    justify-content: center;
+    align-items: center;    
+    align-content: center;
+    justify-items: center;
+}
+
+nav{ font-family: 'Poppins', sans-serif;}
+a  { text-decoration:             none; }
+li { list-style:                  none; }
+
+.overflow-hidden{ overflow: hidden; }
+
+.one-row {white-space: nowrap;}
+
+.max-z-index{ z-index: 101; }
+.master-z-index{ z-index: 102; }
+
+.custom-font{ font-size: 1.2vw; }
+
+.bold{ font-weight: bold; }
+
+.txt-upper{ text-transform: uppercase; }
+.txt-lower{ text-transform: lowercase; }
+
+.underline{ text-decoration: underline; }
+
+.no-outline{ outline: none; }
+
+.no-decoration{ text-decoration: none;}
+
+.outline-black{ outline: #000 solid 0.1vw; }
+.outline-white{ outline: #000 solid 0.1vw; }
+
+.fixed    { position:    fixed;  }
+.static   { position:   static;  }
+.absolute { position: absolute;  }
+.relative { position: relative;  }
+
+.fade      { transition: 0.5s; }
+
+.fade:hover{ transition: 0.5s; }
+
+.f-right{ float: right; }
+.f-left { float:  left; }
+.f-none { float:  none; }
+
+.b-solid{ border-style: solid;}
+
+.b-black{ border-color: #000;}
+
+.b-white{ border-color: #fff;}
+
+.righter{
+    justify-content: right;
+    align-items: end;
+    align-content: end;
+    justify-items: right;
+}
+
+.txt-ctr    { text-align:  center; }
+.txt-center { text-align:  center; }
+.txt-left   { text-align:    left; }
+.txt-right  { text-align:   right; }
+.txt-end    { text-align:   right; }
+
+.auto  { margin:    auto; }
+.flex  { display:   flex; }
+.inline{ display: inline; }
+
+.block{ display: block; }
+.none { display:  none; }
+
+.no-border{ border-color: #00000000; }
+
+.pointer{ cursor: pointer; }
+
+.link { text-decoration: none; position: relative; }
+  
+.link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.01vw;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+  
+.link:hover:after {
+    width: 100%;
+}
+
+.link-gray { text-decoration: none; position: relative; }
+  
+.link-gray:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.01vw;
+    background-color: rgb(94, 94, 94);
+    transition: 0.5s;
+}
+  
+.link-gray:hover:after {
+    width: 100%;
+}
+
+
+.linked{  text-decoration: none; position: relative; width: 100%; }
+
+.linked:after {
+    color: #262626;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.01vw;
+    background-color: #262626;
+    transition: 0.5s;
+}
+  
+
+.linked-white{  text-decoration: none; position: relative; width: 100%; }
+
+.linked-white:after {
+    color: #ffffff;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.01vw;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+  
+
+.link-white { text-decoration: none; position: relative; }
+  
+.link-white:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.01vw;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  
+.link-white:hover:after {
+    width: 100%;
+}
+
+.scale-element  { transform: scale(1); }
+.scale-element2  { transform: scale(1);  }
+
+.hover-scale-element  { transform: scale(1); }
+.hover-scale-element2  { transform: scale(1);  }
+
+.hover-shadow:hover  { box-shadow: 0vw 0vw 0.5vw 0.1vw #00000073; }
+
+.hover-outline:hover { box-shadow: 0vw 0vw 0vw 0.25vw #00000073;  }
+
+.hover-scale-element:hover .scale-element  { transform: scale(1.2); }
+
+.hover-scale-element2:hover .scale-element2  { transform: scale(1.1);  }
+
+.hover-scale:hover   { transform: scale(1.1);                       }
+
+.hover-scale2:hover  { transform: scale(1.05);                      }
+
+.btn                     { padding: 0.5vw 1vw; border-radius: 0.5vw;                                                  }
+.btn-outline-white             { border: #00000000 0.1vw solid;                                                            }
+.btn-outline-white:hover       { border: #ffffff 0.1vw solid;                                                            }
+.btn-outline             { border: #00000000 0.1vw solid;                                                            }
+.btn-outline:hover       { border: #000000 0.1vw solid;                                                            }
+.btn-hover               { border: #ffffff00 0.1vw solid; padding: 0.5vw 1vw; border-radius: 0.5vw;                   }
+.btn-hover:hover         { color: #262626; border: #26262600 0.1vw solid;                 }
+.btn-hover-outline       { color: #262626; border: #26262600 0.1vw solid;                 }
+.btn-hover-outline:hover { border: #ffffff 0.1vw solid;                                                             }
+.btn-hover-outline-black       { color: #262626; border: #26262600 0.1vw solid;                 }
+.btn-hover-outline-black:hover { border: #000000 0.1vw solid;                                                             }
+.btn-custom              { color: #262626; border: #26262600 0.1vw solid; padding: 0.30vw 1vw; border-radius: 0.5vw; }
+.btn-default             { color: #262626; border: #ffffff00 0.1vw solid;                                           }
+.btn-default:hover       { background-color: #fff; color: #262626; border: #26262600 0.1vw solid;                 }
+.btn-radius              { padding: 0.6vw 1vw; border-radius: 100vw;                                                  }
+
+.input-default{
+    background-color: #fff;
+    border: none;
+}
+
+.search-style-transition{
+    left: 35%;
+}
+
+.no-link-line{ text-decoration: none;  }
+.link-line   { text-decoration: underline; }
+
+.w-auto{ width: auto; }
+.h-auto{ height: auto; }
+
+.v-center-row{
+    flex-direction: row;
+    align-items: center;
+}
+
+.h-center{ margin: auto; justify-content: center; align-items: center; justify-items: center; align-content: center; }
+
+.mg-v-0 { margin-top: 0; margin-bottom: 0;   }
+.mg-h-0 { margin-left: 0; margin-right: 0;   }
+.pd-v-0 { padding-top: 0; padding-bottom: 0; }
+.pd-h-0 { padding-left: 0; padding-right: 0; }
+.pd-0 { padding: 0; }
+.mg-0 { margin: 0;  }
+.pd-left-0   { padding-left: 0;   }
+.mg-left-0   { margin-left: 0;    }
+.pd-right-0  { padding-right: 0;  }
+.mg-right-0  { margin-right: 0;   }
+.pd-top-0    { padding-top: 0;    }
+.mg-top-0    { margin-top: 0;     }
+.pd-bottom-0 { padding-bottom: 0; }
+.mg-bottom-0 { margin-bottom: 0;  }
+
+@media (min-width: 500px) and (max-width: 800px){
+
+.tablet-table {width: 100%;border-collapse: collapse;}
+.tablet-th, .td {border: 1px solid #ddd;}  
+.tablet-th {background-color: #5c5c5c;color: #ffffff;}  
+.tablet-tr:nth-child(even) {background-color: #f9f9f9;}
+.tablet-font1{font-family: 'Poppins', sans-serif;}
+.tablet-font2{font-family: 'Noto Sans', sans-serif;}
+.tablet-font3{font-family: Arial, Helvetica, sans-serif;}
+.tablet-font4{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.tablet-ctr{justify-content: center;align-items: center;align-content: center;justify-items: center;}
+.tablet-overflow-hidden{ overflow: hidden; }
+.tablet-one-row {white-space: nowrap;}
+.tablet-max-z-index{ z-index: 101; }
+.tablet-master-z-index{ z-index: 102; }
+.tablet-custom-font{ font-size: 1.2vw; }
+.tablet-bold{ font-weight: bold; }
+.tablet-txt-upper{ text-transform: uppercase; }
+.tablet-txt-lower{ text-transform: lowercase; }
+.tablet-underline{ text-decoration: underline; }
+.tablet-no-outline{ outline: none; }
+.tablet-no-decoration{ text-decoration: none;}
+.tablet-outline-black{ outline: #000 solid 0.1vw; }
+.tablet-outline-white{ outline: #000 solid 0.1vw; }
+.tablet-fixed    { position:    fixed;  }
+.tablet-static   { position:   static;  }
+.tablet-absolute { position: absolute;  }
+.tablet-relative { position: relative;  }
+.tablet-fade      { transition: 0.5s; }
+.tablet-fade:hover{ transition: 0.5s; }
+.tablet-f-right{ float: right; }
+.tablet-f-left { float:  left; }
+.tablet-f-none { float:  none; }
+.tablet-b-solid{ border-style: solid;}
+.tablet-b-black{ border-color: #000;}
+.tablet-b-white{ border-color: #fff;}
+.tablet-righter{  justify-content: right;  align-items: end;align-content: end;  justify-items: right;}
+.tablet-txt-ctr    { text-align:  center; }
+.tablet-txt-center { text-align:  center; }
+.tablet-txt-left   { text-align:    left; }
+.tablet-txt-right  { text-align:   right; }
+.tablet-txt-end    { text-align:   right; }
+.tablet-auto  { margin:    auto; }
+.tablet-flex  { display:   flex; }
+.tablet-inline{ display: inline; }
+.tablet-block{ display: block; }
+.tablet-none { display:  none; }
+.tablet-no-border{ border-color: #00000000; }
+.tablet-pointer{ cursor: pointer; }
+.tablet-link { text-decoration: none; position: relative; }
+.tablet-link:after {  content: '';  position: absolute;  left: 0;  bottom: 0;  width: 0;  height: 0.01vw;  background-color: rgb(0, 0, 0);  transition: 0.5s;}
+.tablet-link:hover:after {width: 100%;}
+.tablet-link-gray { text-decoration: none; position: relative; }
+.tablet-link-gray:after {content: '';position: absolute;left: 0;  bottom: 0;  width: 0;height: 0.01vw;background-color: rgb(94, 94, 94);  transition: 0.5s;}
+.tablet-link-gray:hover:after {width: 100%;}
+.tablet-linked{  text-decoration: none; position: relative; width: 100%; }
+.tablet-linked:after {color: #262626;content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 0.01vw;background-color: #262626;transition: 0.5s;}
+.tablet-linked-white{  text-decoration: none; position: relative; width: 100%; }
+.tablet-linked-white:after {color: #ffffff;content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 0.01vw;background-color: #ffffff;transition: 0.5s;}
+.tablet-link-white { text-decoration: none; position: relative; }
+.tablet-link-white:after {content: '';position: absolute;left: 0;bottom: 0;width: 0;height: 0.01vw;background-color: rgb(255, 255, 255);transition: 0.5s;}
+.tablet-link-white:hover:after {width: 100%;}
+.tablet-scale-element  { transform: scale(1); }
+.tablet-scale-element2  { transform: scale(1);  }
+.tablet-hover-scale-element  { transform: scale(1); }
+.tablet-hover-scale-element2  { transform: scale(1);  }
+.tablet-hover-shadow:hover  { box-shadow: 0vw 0vw 0.5vw 0.1vw #00000073; }
+.tablet-hover-outline:hover { box-shadow: 0vw 0vw 0vw 0.25vw #00000073;  }
+.tablet-hover-scale-element:hover .scale-element  { transform: scale(1.2); }
+.tablet-hover-scale-element2:hover .scale-element2  { transform: scale(1.1);  }
+.tablet-hover-scale:hover   { transform: scale(1.1);                       }
+.tablet-hover-scale2:hover  { transform: scale(1.05);                      }
+.tablet-btn                     { padding: 0.5vw 1vw; border-radius: 0.5vw;                                                  }
+.tablet-btn-outline-white             { border: #00000000 0.1vw solid;                                                            }
+.tablet-btn-outline-white:hover       { border: #ffffff 0.1vw solid;                                                            }
+.tablet-btn-outline             { border: #00000000 0.1vw solid;                                                            }
+.tablet-btn-outline:hover       { border: #000000 0.1vw solid;                                                            }
+.tablet-btn-hover               { border: #ffffff00 0.1vw solid; padding: 0.5vw 1vw; border-radius: 0.5vw;                   }
+.tablet-btn-hover:hover         { color: #262626; border: #26262600 0.1vw solid;                 }
+.tablet-btn-hover-outline       { color: #262626; border: #26262600 0.1vw solid;                 }
+.tablet-btn-hover-outline:hover { border: #ffffff 0.1vw solid;                                                             }
+.tablet-btn-hover-outline-black       { color: #262626; border: #26262600 0.1vw solid;                 }
+.tablet-btn-hover-outline-black:hover { border: #000000 0.1vw solid;                                                             }
+.tablet-btn-custom              { color: #262626; border: #26262600 0.1vw solid; padding: 0.30vw 1vw; border-radius: 0.5vw; }
+.tablet-btn-default             { color: #262626; border: #ffffff00 0.1vw solid;                                           }
+.tablet-btn-default:hover       { background-color: #fff; color: #262626; border: #26262600 0.1vw solid;                 }
+.tablet-btn-radius              { padding: 0.6vw 1vw; border-radius: 100vw;                                                  }
+.tablet-input-default{background-color: #fff;border: none;}
+.tablet-search-style-transition{left: 35%;}
+.tablet-no-link-line{ text-decoration: none;  }
+.tablet-link-line   { text-decoration: underline; }
+.tablet-w-auto{ width: auto; }
+.tablet-h-auto{ height: auto; }
+.tablet-v-center-row{flex-direction: row;align-items: center;}
+.tablet-h-center{ margin: auto; justify-content: center; align-items: center; justify-items: center; align-content: center; }
+.tablet-mg-v-0 { margin-top: 0; margin-bottom: 0;   }
+.tablet-mg-h-0 { margin-left: 0; margin-right: 0;   }
+.tablet-pd-v-0 { padding-top: 0; padding-bottom: 0; }
+.tablet-pd-h-0 { padding-left: 0; padding-right: 0; }
+.tablet-pd-0 { padding: 0; }
+.tablet-mg-0 { margin: 0;  }
+.tablet-pd-left-0   { padding-left: 0;   }
+.tablet-mg-left-0   { margin-left: 0;    }
+.tablet-pd-right-0  { padding-right: 0;  }
+.tablet-mg-right-0  { margin-right: 0;   }
+.tablet-pd-top-0    { padding-top: 0;    }
+.tablet-mg-top-0    { margin-top: 0;     }
+.tablet-pd-bottom-0 { padding-bottom: 0; }
+.tablet-mg-bottom-0 { margin-bottom: 0;  }
+.tablet-solid-op{ opacity: 1 }
+.tablet-op-1{opacity: 1;  visibility: visible;  transition-delay: 0s;}
+.tablet-op-0{ opacity: 0;  visibility: hidden;transition: opacity 0.3s, visibility 0s linear 0.3s;}
+}
+
+@media (min-width: 0px) and (max-width: 500px){
+  .mobile-table {width: 100%;border-collapse: collapse;}
+  .mobile-th, .td {border: 1px solid #ddd;}  
+  .mobile-th {background-color: #5c5c5c;color: #ffffff;}  
+  .mobile-tr:nth-child(even) {background-color: #f9f9f9;}
+  .mobile-font1{font-family: 'Poppins', sans-serif;}
+  .mobile-font2{font-family: 'Noto Sans', sans-serif;}
+  .mobile-font3{font-family: Arial, Helvetica, sans-serif;}
+  .mobile-font4{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  .mobile-ctr{justify-content: center;align-items: center;align-content: center;justify-items: center;}
+  .mobile-overflow-hidden{ overflow: hidden; }
+  .mobile-one-row {white-space: nowrap;}
+  .mobile-max-z-index{ z-index: 101; }
+  .mobile-master-z-index{ z-index: 102; }
+  .mobile-custom-font{ font-size: 1.2vw; }
+  .mobile-bold{ font-weight: bold; }
+  .mobile-txt-upper{ text-transform: uppercase; }
+  .mobile-txt-lower{ text-transform: lowercase; }
+  .mobile-underline{ text-decoration: underline; }
+  .mobile-no-outline{ outline: none; }
+  .mobile-no-decoration{ text-decoration: none;}
+  .mobile-outline-black{ outline: #000 solid 0.1vw; }
+  .mobile-outline-white{ outline: #000 solid 0.1vw; }
+  .mobile-fixed    { position:    fixed;  }
+  .mobile-static   { position:   static;  }
+  .mobile-absolute { position: absolute;  }
+  .mobile-relative { position: relative;  }
+  .mobile-fade      { transition: 0.5s; }
+  .mobile-fade:hover{ transition: 0.5s; }
+  .mobile-f-right{ float: right; }
+  .mobile-f-left { float:  left; }
+  .mobile-f-none { float:  none; }
+  .mobile-b-solid{ border-style: solid;}
+  .mobile-b-black{ border-color: #000;}
+  .mobile-b-white{ border-color: #fff;}
+  .mobile-righter{  justify-content: right;  align-items: end;align-content: end;  justify-items: right;}
+  .mobile-txt-ctr    { text-align:  center; }
+  .mobile-txt-center { text-align:  center; }
+  .mobile-txt-left   { text-align:    left; }
+  .mobile-txt-right  { text-align:   right; }
+  .mobile-txt-end    { text-align:   right; }
+  .mobile-auto  { margin:    auto; }
+  .mobile-flex  { display:   flex; }
+  .mobile-inline{ display: inline; }
+  .mobile-block{ display: block; }
+  .mobile-none { display:  none; }
+  .mobile-no-border{ border-color: #00000000; }
+  .mobile-pointer{ cursor: pointer; }
+  .mobile-link { text-decoration: none; position: relative; }
+  .mobile-link:after {  content: '';  position: absolute;  left: 0;  bottom: 0;  width: 0;  height: 0.01vw;  background-color: rgb(0, 0, 0);  transition: 0.5s;}
+  .mobile-link:hover:after {width: 100%;}
+  .mobile-link-gray { text-decoration: none; position: relative; }
+  .mobile-link-gray:after {content: '';position: absolute;left: 0;  bottom: 0;  width: 0;height: 0.01vw;background-color: rgb(94, 94, 94);  transition: 0.5s;}
+  .mobile-link-gray:hover:after {width: 100%;}
+  .mobile-linked{  text-decoration: none; position: relative; width: 100%; }
+  .mobile-linked:after {color: #262626;content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 0.01vw;background-color: #262626;transition: 0.5s;}
+  .mobile-linked-white{  text-decoration: none; position: relative; width: 100%; }
+  .mobile-linked-white:after {color: #ffffff;content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 0.01vw;background-color: #ffffff;transition: 0.5s;}
+  .mobile-link-white { text-decoration: none; position: relative; }
+  .mobile-link-white:after {content: '';position: absolute;left: 0;bottom: 0;width: 0;height: 0.01vw;background-color: rgb(255, 255, 255);transition: 0.5s;}
+  .mobile-link-white:hover:after {width: 100%;}
+  .mobile-scale-element  { transform: scale(1); }
+  .mobile-scale-element2  { transform: scale(1);  }
+  .mobile-hover-scale-element  { transform: scale(1); }
+  .mobile-hover-scale-element2  { transform: scale(1);  }
+  .mobile-hover-shadow:hover  { box-shadow: 0vw 0vw 0.5vw 0.1vw #00000073; }
+  .mobile-hover-outline:hover { box-shadow: 0vw 0vw 0vw 0.25vw #00000073;  }
+  .mobile-hover-scale-element:hover .scale-element  { transform: scale(1.2); }
+  .mobile-hover-scale-element2:hover .scale-element2  { transform: scale(1.1);  }
+  .mobile-hover-scale:hover   { transform: scale(1.1);                       }
+  .mobile-hover-scale2:hover  { transform: scale(1.05);                      }
+  .mobile-btn                     { padding: 0.5vw 1vw; border-radius: 0.5vw;                                                  }
+  .mobile-btn-outline-white             { border: #00000000 0.1vw solid;                                                            }
+  .mobile-btn-outline-white:hover       { border: #ffffff 0.1vw solid;                                                            }
+  .mobile-btn-outline             { border: #00000000 0.1vw solid;                                                            }
+  .mobile-btn-outline:hover       { border: #000000 0.1vw solid;                                                            }
+  .mobile-btn-hover               { border: #ffffff00 0.1vw solid; padding: 0.5vw 1vw; border-radius: 0.5vw;                   }
+  .mobile-btn-hover:hover         { color: #262626; border: #26262600 0.1vw solid;                 }
+  .mobile-btn-hover-outline       { color: #262626; border: #26262600 0.1vw solid;                 }
+  .mobile-btn-hover-outline:hover { border: #ffffff 0.1vw solid;                                                             }
+  .mobile-btn-hover-outline-black       { color: #262626; border: #26262600 0.1vw solid;                 }
+  .mobile-btn-hover-outline-black:hover { border: #000000 0.1vw solid;                                                             }
+  .mobile-btn-custom              { color: #262626; border: #26262600 0.1vw solid; padding: 0.30vw 1vw; border-radius: 0.5vw; }
+  .mobile-btn-default             { color: #262626; border: #ffffff00 0.1vw solid;                                           }
+  .mobile-btn-default:hover       { background-color: #fff; color: #262626; border: #26262600 0.1vw solid;                 }
+  .mobile-btn-radius              { padding: 0.6vw 1vw; border-radius: 100vw;                                                  }
+  .mobile-input-default{background-color: #fff;border: none;}
+  .mobile-search-style-transition{left: 35%;}
+  .mobile-no-link-line{ text-decoration: none;  }
+  .mobile-link-line   { text-decoration: underline; }
+  .mobile-w-auto{ width: auto; }
+  .mobile-h-auto{ height: auto; }
+  .mobile-v-center-row{flex-direction: row;align-items: center;}
+  .mobile-h-center{ margin: auto; justify-content: center; align-items: center; justify-items: center; align-content: center; }
+  .mobile-mg-v-0 { margin-top: 0; margin-bottom: 0;   }
+  .mobile-mg-h-0 { margin-left: 0; margin-right: 0;   }
+  .mobile-pd-v-0 { padding-top: 0; padding-bottom: 0; }
+  .mobile-pd-h-0 { padding-left: 0; padding-right: 0; }
+  .mobile-pd-0 { padding: 0; }
+  .mobile-mg-0 { margin: 0;  }
+  .mobile-pd-left-0   { padding-left: 0;   }
+  .mobile-mg-left-0   { margin-left: 0;    }
+  .mobile-pd-right-0  { padding-right: 0;  }
+  .mobile-mg-right-0  { margin-right: 0;   }
+  .mobile-pd-top-0    { padding-top: 0;    }
+  .mobile-mg-top-0    { margin-top: 0;     }
+  .mobile-pd-bottom-0 { padding-bottom: 0; }
+  .mobile-mg-bottom-0 { margin-bottom: 0;  }
+  .mobile-solid-op{ opacity: 1 }
+  .mobile-op-1{opacity: 1;  visibility: visible;  transition-delay: 0s;}
+  .mobile-op-0{ opacity: 0;  visibility: hidden;transition: opacity 0.3s, visibility 0s linear 0.3s;}
+  .w-full-0{ width: 0%}
+  .mobile-w-full-0{ width: 0%}
+}
+
+.z-index-0   { z-index:  0;  }
+.z-index-1   { z-index:  1;  }
+.z-index-2   { z-index:  2;  }
+.z-index-3   { z-index:  3;  }
+.z-index-4   { z-index:  4;  }
+.z-index-5   { z-index:  5;  }
+.z-index-6   { z-index:  6;  }
+.z-index-7   { z-index:  7;  }
+.z-index-8   { z-index:  8;  }
+.z-index-9   { z-index:  9;  }
+.z-index-10  { z-index: 10;  }
+.z-index-11  { z-index: 11;  }
+.z-index-12  { z-index: 12;  }
+.z-index-13  { z-index: 13;  }
+.z-index-14  { z-index: 14;  }
+.z-index-15  { z-index: 15;  }
+.z-index-16  { z-index: 16;  }
+.z-index-17  { z-index: 17;  }
+.z-index-18  { z-index: 18;  }
+.z-index-19  { z-index: 19;  }
+.z-index-20  { z-index: 20;  }
+.z-index-21  { z-index: 21;  }
+.z-index-22  { z-index: 22;  }
+.z-index-23  { z-index: 23;  }
+.z-index-24  { z-index: 24;  }
+.z-index-25  { z-index: 25;  }
+.z-index-26  { z-index: 26;  }
+.z-index-27  { z-index: 27;  }
+.z-index-28  { z-index: 28;  }
+.z-index-29  { z-index: 29;  }
+.z-index-30  { z-index: 30;  }
+.z-index-31  { z-index: 31;  }
+.z-index-32  { z-index: 32;  }
+.z-index-33  { z-index: 33;  }
+.z-index-34  { z-index: 34;  }
+.z-index-35  { z-index: 35;  }
+.z-index-36  { z-index: 36;  }
+.z-index-37  { z-index: 37;  }
+.z-index-38  { z-index: 38;  }
+.z-index-39  { z-index: 39;  }
+.z-index-40  { z-index: 40;  }
+.z-index-41  { z-index: 41;  }
+.z-index-42  { z-index: 42;  }
+.z-index-43  { z-index: 43;  }
+.z-index-44  { z-index: 44;  }
+.z-index-45  { z-index: 45;  }
+.z-index-46  { z-index: 46;  }
+.z-index-47  { z-index: 47;  }
+.z-index-48  { z-index: 48;  }
+.z-index-49  { z-index: 49;  }
+.z-index-50  { z-index: 50;  }
+.z-index-51  { z-index: 51;  }
+.z-index-52  { z-index: 52;  }
+.z-index-53  { z-index: 53;  }
+.z-index-54  { z-index: 54;  }
+.z-index-55  { z-index: 55;  }
+.z-index-56  { z-index: 56;  }
+.z-index-57  { z-index: 57;  }
+.z-index-58  { z-index: 58;  }
+.z-index-59  { z-index: 59;  }
+.z-index-60  { z-index: 60;  }
+.z-index-61  { z-index: 61;  }
+.z-index-62  { z-index: 62;  }
+.z-index-63  { z-index: 63;  }
+.z-index-64  { z-index: 64;  }
+.z-index-65  { z-index: 65;  }
+.z-index-66  { z-index: 66;  }
+.z-index-67  { z-index: 67;  }
+.z-index-68  { z-index: 68;  }
+.z-index-69  { z-index: 69;  }
+.z-index-70  { z-index: 70;  }
+.z-index-71  { z-index: 71;  }
+.z-index-72  { z-index: 72;  }
+.z-index-73  { z-index: 73;  }
+.z-index-74  { z-index: 74;  }
+.z-index-75  { z-index: 75;  }
+.z-index-76  { z-index: 76;  }
+.z-index-77  { z-index: 77;  }
+.z-index-78  { z-index: 78;  }
+.z-index-79  { z-index: 79;  }
+.z-index-80  { z-index: 80;  }
+.z-index-81  { z-index: 81;  }
+.z-index-82  { z-index: 82;  }
+.z-index-83  { z-index: 83;  }
+.z-index-84  { z-index: 84;  }
+.z-index-85  { z-index: 85;  }
+.z-index-86  { z-index: 86;  }
+.z-index-87  { z-index: 87;  }
+.z-index-88  { z-index: 88;  }
+.z-index-89  { z-index: 89;  }
+.z-index-90  { z-index: 90;  }
+.z-index-91  { z-index: 91;  }
+.z-index-92  { z-index: 92;  }
+.z-index-93  { z-index: 93;  }
+.z-index-94  { z-index: 94;  }
+.z-index-95  { z-index: 95;  }
+.z-index-96  { z-index: 96;  }
+.z-index-97  { z-index: 97;  }
+.z-index-98  { z-index: 98;  }
+.z-index-99  { z-index: 99;  }
+.z-index-100 { z-index: 100; }
+
+.solid-op{ opacity: 1 }
+
+.op-1{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+ }
+
+.op-0{ 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s; 
+}
+
+
+.droped{
+    border-width: 3px;
+    border-style: solid; 
+    border-color:  blue; 
+}
+
+.rotate-90{ transform: rotate(90deg); }
+
+
+.bg-img-standard{
+    background-image: url("img/background-default.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .bg-img-standard2{
+    background-image: url("img/background-default2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  
+  .bg-img-standard3{
+    background-image: url("img/background-default3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  
+  .bg-img-default2 {
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    padding: 1vw;
+  }
+  
+  .bg-img-default2 h1 {
+    transition: 0.5s;
+    padding: 1vw;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bg-img-default2 p {
+    transition: 0.5s;
+    padding: 1vw;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bg-img-default2 img {
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .bg-img-default {
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    padding: 1vw;
+  }
+  
+  .bg-img-default h1 {
+    transition: 0.5s;
+    padding: 1vw;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bg-img-default p {
+    transition: 0.5s;
+    padding: 1vw;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bg-img-default img {
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .bg-img-default:hover img {
+    transition: 0.5s;
+    opacity: 1;
+  }
+  
+  .bg-img-default:hover p {
+    text-shadow: 0.1vw 0.1vw 0vw #000000
+  }
+  
+  .bg-img-default:hover h1 {
+    text-shadow: 0.2vw 0.2vw 0vw #000000
+  }
+  
+  .bg-img-default-1{
+    background-color: #000;
+    background-image: url("img/default1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  
+  .bg-img-default-2{
+    background-color: #000;
+    background-image: url("img/default2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  
+  .bg-img-default-3{
+    background-color: #000;
+    background-image: url("img/default3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+    
+    .btn-slider{
+      display: block;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #333;
+      text-align: center;
+      position: relative;
+      transition: all .35s;
+    }
+    
+    .btn-slider span{
+      position: relative;
+      z-index: 2;
+    }
+    
+    .btn-slider:after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border-radius: 0.4vw;
+      background: #2b719f;
+      transition: all .35s;
+    }
+    
+    .btn-slider:hover{
+      color: #fff;
+    }
+    
+    .btn-slider:hover:after{
+      width: 100%;
+    }
+  
+  .bg-blue-gradient-animated:hover{
+      transition: 0.8s;
+      border-color: #fff;
+      background-color: #000;
+      border-style: none;
+      border-width: 0.2vw;
+      background-image: linear-gradient(to right, rgb(27, 48, 75), rgb(13, 61, 46));
+      background-repeat: no-repeat;
+      animation: bggradient 5s linear infinite;
+      background-size: 15vw;
+  }
+  
+  .bg-blue-gradient-animated{
+      transition: 0.5s;
+      background-color: #e5e5e5;
+      color: #000000;
+      border-color: #444444;
+      border-style: none;
+      background-image: linear-gradient(to right, rgb(27, 48, 75), rgb(13, 61, 46));
+      background-repeat: no-repeat;
+      animation: bggradient 0s linear infinite;
+      background-size: 0vw;
+  }
+  
+  @keyframes bggradient {
+      0%   {background-color: #fff; color: rgb(189, 216, 255); border-color: rgb(189, 216, 255); }
+      20%  {background-color: #fff; color: rgb(87, 255, 202); border-color: rgb(87, 255, 202); }
+      30%  {background-color: #fff; color: rgb(189, 216, 255); border-color: rgb(189, 216, 255); }
+      60%  {background-color: #fff; color: rgb(87, 255, 202); border-color: rgb(87, 255, 202); }
+      70%  {background-color: #fff; color: rgb(189, 216, 255); border-color: rgb(189, 216, 255); }
+      90%  {background-color: #fff; color: rgb(87, 255, 202); border-color: rgb(87, 255, 202); }
+      100% {background-color: #fff; color: rgb(189, 216, 255); border-color: rgb(189, 216, 255); }
+  }
+  
+  .white   { color: #fff; }
+  
+  .transparent{ background-color: #ffffff00; }
+  
+  .black   { color: #000; }
+  
+  .custom-blue{ color: #2a89e2; }
+  .bg-custom-blue{ background-color: #3278e0; }
+  .bg-custom-blue2{ background-color: #3278e0; }
+  
+  .custom-gray-blue{ color: #3c567e; }
+  .bg-custom-gray-blue{ background-color: #3c567e; }
+  .bg-custom-gray-blue2{ background-color: #222d3d; }
+  .bg-custom-gray-purple{ background-color: #574171; }
+  .bg-custom-gray-purple2{ background-color: #222d3d; }
+  
+  .bg-white{ background-color: #fff; }
+  
+  .bg-transparent{ background-color: #ffffff00; }
+  
+  .bg-black{ background-color: #000; }
+  
+  .red    { color: rgb(255, 0, 0);     }
+  .red1   { color: rgb(255, 20, 20);   }
+  .red2   { color: rgb(255, 40, 40);   }
+  .red3   { color: rgb(255, 60, 60);   }
+  .red4   { color: rgb(255, 80, 80);   }
+  .red5   { color: rgb(255, 100, 100); }
+  .red6   { color: rgb(255, 120, 120)  }
+  .red7   { color: rgb(255, 140, 140); }
+  .red8   { color: rgb(255, 160, 160); }
+  .red9   { color: rgb(255, 180, 180); }
+  .red10  { color: rgb(255, 200, 200); }
+  
+  .dark-red-gradient   { background-image: linear-gradient(to right, rgb(100, 5, 5), rgb(96, 37, 7)); }
+  
+  .dark-red   { color: rgb(100, 5, 5); }
+  .dark-red1  { color: rgb(90, 5, 5);  }
+  .dark-red2  { color: rgb(85, 5, 5);  }
+  .dark-red3  { color: rgb(80, 5, 5);  }
+  .dark-red4  { color: rgb(70, 5, 5);  }
+  .dark-red5  { color: rgb(65, 5, 5);  }
+  .dark-red6  { color: rgb(60, 5, 5);  }
+  .dark-red7  { color: rgb(50, 5, 5);  }
+  .dark-red8  { color: rgb(45, 5, 5);  }
+  .dark-red9  { color: rgb(40, 5, 5);  }
+  .dark-red10 { color: rgb(30, 5, 5);  }
+  
+  .blue    { color: rgb(0, 119, 255);   }
+  .blue1   { color: rgb(20, 141, 255);  }
+  .blue2   { color: rgb(40, 151, 255);  }
+  .blue3   { color: rgb(60, 167, 255);  }
+  .blue4   { color: rgb(80, 170, 255);  }
+  .blue5   { color: rgb(100, 172, 255); }
+  .blue6   { color: rgb(120, 183, 255)  }
+  .blue7   { color: rgb(140, 186, 255); }
+  .blue8   { color: rgb(160, 209, 255); }
+  .blue9   { color: rgb(180, 215, 255); }
+  .blue10  { color: rgb(200, 230, 255); }
+  
+  .dark-blue   { color: rgb(5, 43, 100); }
+  .dark-blue1  { color: rgb(5, 39, 90);  }
+  .dark-blue2  { color: rgb(5, 40, 85);  }
+  .dark-blue3  { color: rgb(5, 40, 80);  }
+  .dark-blue4  { color: rgb(5, 33, 70);  }
+  .dark-blue5  { color: rgb(5, 29, 65);  }
+  .dark-blue6  { color: rgb(5, 29, 60);  }
+  .dark-blue7  { color: rgb(5, 24, 50);  }
+  .dark-blue8  { color: rgb(5, 26, 45);  }
+  .dark-blue9  { color: rgb(5, 21, 40);  }
+  .dark-blue10 { color: rgb(5, 18, 30);  }
+  
+  .green    { color: rgb(0, 255, 0);     }
+  .green1   { color: rgb(28, 255, 20);   }
+  .green2   { color: rgb(40, 255, 76);   }
+  .green3   { color: rgb(60, 255, 60);   }
+  .green4   { color: rgb(80, 255, 95);   }
+  .green5   { color: rgb(100, 255, 126); }
+  .green6   { color: rgb(120, 255, 120)  }
+  .green7   { color: rgb(140, 255, 150); }
+  .green8   { color: rgb(160, 255, 173); }
+  .green9   { color: rgb(180, 255, 193); }
+  .green10  { color: rgb(200, 255, 205); }
+  
+  .dark-green   { color: rgb(5, 100, 18); }
+  .dark-green1  { color: rgb(5, 90, 19);  }
+  .dark-green2  { color: rgb(5, 85, 5);   }
+  .dark-green3  { color: rgb(5, 80, 11);  }
+  .dark-green4  { color: rgb(5, 70, 8);   }
+  .dark-green5  { color: rgb(5, 65, 5);   }
+  .dark-green6  { color: rgb(5, 60, 12);  }
+  .dark-green7  { color: rgb(5, 50, 9);   }
+  .dark-green8  { color: rgb(5, 45, 12);  }
+  .dark-green9  { color: rgb(5, 40, 13);  }
+  .dark-green10 { color: rgb(5, 30, 13);  }
+  
+  .yellow    { color: rgb(255, 217, 0);   }
+  .yellow1   { color: rgb(255, 231, 20);  }
+  .yellow2   { color: rgb(255, 241, 40);  }
+  .yellow3   { color: rgb(255, 242, 60);  }
+  .yellow4   { color: rgb(255, 243, 80);  }
+  .yellow5   { color: rgb(255, 232, 100); }
+  .yellow6   { color: rgb(255, 235, 120)  }
+  .yellow7   { color: rgb(255, 253, 140); }
+  .yellow8   { color: rgb(255, 253, 160); }
+  .yellow9   { color: rgb(255, 254, 180); }
+  .yellow10  { color: rgb(255, 249, 200); }
+  
+  .dark-yellow   { color: rgb(100, 90, 5); }
+  .dark-yellow1  { color: rgb(90, 82, 5);  }
+  .dark-yellow2  { color: rgb(85, 73, 5);  }
+  .dark-yellow3  { color: rgb(80, 75, 5);  }
+  .dark-yellow4  { color: rgb(70, 60, 5);  }
+  .dark-yellow5  { color: rgb(65, 61, 5);  }
+  .dark-yellow6  { color: rgb(60, 47, 5);  }
+  .dark-yellow7  { color: rgb(50, 45, 5);  }
+  .dark-yellow8  { color: rgb(45, 42, 5);  }
+  .dark-yellow9  { color: rgb(40, 35, 5);  }
+  .dark-yellow10 { color: rgb(30, 26, 5);  }
+  
+  .orange    { color: rgb(255, 115, 0);   }
+  .orange1   { color: rgb(255, 134, 20);  }
+  .orange2   { color: rgb(255, 144, 40);  }
+  .orange3   { color: rgb(255, 148, 60);  }
+  .orange4   { color: rgb(255, 173, 80);  }
+  .orange5   { color: rgb(255, 188, 100); }
+  .orange6   { color: rgb(255, 201, 120)  }
+  .orange7   { color: rgb(255, 201, 140); }
+  .orange8   { color: rgb(255, 203, 160); }
+  .orange9   { color: rgb(255, 223, 180); }
+  .orange10  { color: rgb(255, 231, 200); }
+  
+  .dark-orange   { color: rgb(100, 51, 5); }
+  .dark-orange1  { color: rgb(90, 46, 5);  }
+  .dark-orange2  { color: rgb(85, 44, 5);  }
+  .dark-orange3  { color: rgb(80, 41, 5);  }
+  .dark-orange4  { color: rgb(70, 36, 5);  }
+  .dark-orange5  { color: rgb(65, 34, 5);  }
+  .dark-orange6  { color: rgb(60, 22, 5);  }
+  .dark-orange7  { color: rgb(50, 23, 5);  }
+  .dark-orange8  { color: rgb(45, 20, 5);  }
+  .dark-orange9  { color: rgb(40, 15, 5);  }
+  .dark-orange10 { color: rgb(30, 15, 5);  }
+  
+  .purple    { color: rgb(111, 0, 255);   }
+  .purple1   { color: rgb(130, 20, 255);  }
+  .purple2   { color: rgb(122, 40, 255);  }
+  .purple3   { color: rgb(102, 60, 255);  }
+  .purple4   { color: rgb(127, 80, 255);  }
+  .purple5   { color: rgb(172, 100, 255); }
+  .purple6   { color: rgb(167, 120, 255)  }
+  .purple7   { color: rgb(184, 140, 255); }
+  .purple8   { color: rgb(196, 160, 255); }
+  .purple9   { color: rgb(196, 180, 255); }
+  .purple10  { color: rgb(219, 200, 255); }
+  
+  .dark-purple   { color: rgb(30, 5, 100); }
+  .dark-purple1  { color: rgb(35, 5, 90);  }
+  .dark-purple2  { color: rgb(22, 5, 85);  }
+  .dark-purple3  { color: rgb(31, 5, 80);  }
+  .dark-purple4  { color: rgb(19, 5, 70);  }
+  .dark-purple5  { color: rgb(16, 5, 65);  }
+  .dark-purple6  { color: rgb(13, 5, 60);  }
+  .dark-purple7  { color: rgb(17, 5, 50);  }
+  .dark-purple8  { color: rgb(16, 5, 45);  }
+  .dark-purple9  { color: rgb(13, 5, 40);  }
+  .dark-purple10 { color: rgb(10, 5, 30);  }
+  
+  .gray    { color: rgb(40, 40, 40);    }
+  .gray1   { color: rgb(60, 60, 60);    }
+  .gray2   { color: rgb(80, 80, 80);    }
+  .gray3   { color: rgb(100, 100, 100); }
+  .gray4   { color: rgb(120, 120, 120); }
+  .gray5   { color: rgb(140, 140, 140); }
+  .gray6   { color: rgb(160, 160, 160); }
+  .gray7   { color: rgb(180, 180, 180); }
+  .gray8   { color: rgb(200, 200, 200); }
+  .gray9   { color: rgb(220, 220, 220); }
+  .gray10  { color: rgb(240, 240, 240); }
+  
+  .dark-gray    { color: rgb(40, 40, 40);    }
+  .dark-gray1   { color: rgb(60, 60, 60);    }
+  .dark-gray2   { color: rgb(80, 80, 80);    }
+  .dark-gray3   { color: rgb(100, 100, 100); }
+  .dark-gray4   { color: rgb(120, 120, 120); }
+  .dark-gray5   { color: rgb(140, 140, 140); }
+  .dark-gray6   { color: rgb(160, 160, 160); }
+  .dark-gray7   { color: rgb(180, 180, 180); }
+  .dark-gray8   { color: rgb(200, 200, 200); }
+  .dark-gray9   { color: rgb(220, 220, 220); }
+  .dark-gray10  { color: rgb(240, 240, 240); }
+  
+  .pink    { color: rgb(255, 0, 255);   }
+  .pink1   { color: rgb(255, 20, 255);  }
+  .pink2   { color: rgb(255, 40, 237);  }
+  .pink3   { color: rgb(255, 60, 213);  }
+  .pink4   { color: rgb(255, 80, 255);  }
+  .pink5   { color: rgb(255, 100, 247); }
+  .pink6   { color: rgb(251, 120, 255)  }
+  .pink7   { color: rgb(255, 140, 249); }
+  .pink8   { color: rgb(255, 160, 255); }
+  .pink9   { color: rgb(255, 180, 245); }
+  .pink10  { color: rgb(255, 200, 246); }
+  
+  .dark-pink   { color: rgb(100, 5, 100); }
+  .dark-pink1  { color: rgb(90, 5, 79);   }
+  .dark-pink2  { color: rgb(82, 5, 85);   }
+  .dark-pink3  { color: rgb(80, 5, 68);   }
+  .dark-pink4  { color: rgb(70, 5, 67);   }
+  .dark-pink5  { color: rgb(65, 5, 57);   }
+  .dark-pink6  { color: rgb(60, 5, 55);   }
+  .dark-pink7  { color: rgb(50, 5, 46);   }
+  .dark-pink8  { color: rgb(45, 5, 40);   }
+  .dark-pink9  { color: rgb(40, 5, 40);   }
+  .dark-pink10 { color: rgb(30, 5, 28);   }
+  
+  .bg-dark-blue-gradient  { background-image: linear-gradient(to right, rgb(47, 61, 96), rgb(45, 139, 109)); }
+  
+  .bg-dark-blue-green     { background-color: rgb(22, 80, 102); }
+  .bg-dark-blue-green2    { background-color: rgb(17, 91, 95);  }
+  
+  .bg-blue-gradient       { background-image: linear-gradient(to right, rgb(128, 181, 255), rgb(87, 255, 202)); }
+  
+  .bg-dark-red-gradient   { background-image: linear-gradient(to right, rgb(96, 47, 47), rgb(139, 76, 45));     }
+  .bg-red-gradient        { background-image: linear-gradient(to right, rgb(255, 128, 128), rgb(255, 143, 87)); }
+  
+  .bg-red           { background-color: rgb(255, 0, 0);                 }
+  .bg-red1          { background-color: rgb(255, 20, 20);               }
+  .bg-red2          { background-color: rgb(255, 40, 40);               }
+  .bg-red3          { background-color: rgb(255, 60, 60);               }
+  .bg-red4          { background-color: rgb(255, 80, 80);               }
+  .bg-red5          { background-color: rgb(255, 100, 100);             }
+  .bg-red6          { background-color: rgb(255, 120, 120)              }
+  .bg-red7          { background-color: rgb(255, 140, 140);             }
+  .bg-red8          { background-color: rgb(255, 160, 160);             }
+  .bg-red9          { background-color: rgb(255, 180, 180);             }
+  .bg-red10         { background-color: rgb(255, 200, 200);             }
+  .bg-dark-red      { background-color: rgb(100, 5, 5);                 }
+  .bg-dark-red1     { background-color: rgb(90, 5, 5);                  }
+  .bg-dark-red2     { background-color: rgb(85, 5, 5);                  }
+  .bg-dark-red3     { background-color: rgb(80, 5, 5);                  }
+  .bg-dark-red4     { background-color: rgb(70, 5, 5);                  }
+  .bg-dark-red5     { background-color: rgb(65, 5, 5);                  }
+  .bg-dark-red6     { background-color: rgb(60, 5, 5);                  }
+  .bg-dark-red7     { background-color: rgb(50, 5, 5);                  }
+  .bg-dark-red8     { background-color: rgb(45, 5, 5);                  }
+  .bg-dark-red9     { background-color: rgb(40, 5, 5);                  }
+  .bg-dark-red10    { background-color: rgb(30, 5, 5);                  }
+  .bg-blue          { background-color: rgb(0, 119, 255);               }
+  .bg-blue1         { background-color: rgb(20, 141, 255);              }
+  .bg-blue2         { background-color: rgb(40, 151, 255);              }
+  .bg-blue3         { background-color: rgb(60, 167, 255);              }
+  .bg-blue4         { background-color: rgb(80, 170, 255);              }
+  .bg-blue5         { background-color: rgb(100, 172, 255);             }
+  .bg-blue6         { background-color: rgb(120, 183, 255)              }
+  .bg-blue7         { background-color: rgb(140, 186, 255);             }
+  .bg-blue8         { background-color: rgb(160, 209, 255);             }
+  .bg-blue9         { background-color: rgb(180, 215, 255);             }
+  .bg-blue10        { background-color: rgb(200, 230, 255);             }
+  .bg-dark-blue     { background-color: rgb(5, 43, 100);                }
+  .bg-dark-blue1    { background-color: rgb(5, 39, 90);                 }
+  .bg-dark-blue2    { background-color: rgb(5, 40, 85);                 }
+  .bg-dark-blue3    { background-color: rgb(5, 40, 80);                 }
+  .bg-dark-blue4    { background-color: rgb(5, 33, 70);                 }
+  .bg-dark-blue5    { background-color: rgb(5, 29, 65);                 }
+  .bg-dark-blue6    { background-color: rgb(5, 29, 60);                 }
+  .bg-dark-blue7    { background-color: rgb(5, 24, 50);                 }
+  .bg-dark-blue8    { background-color: rgb(5, 26, 45);                 }
+  .bg-dark-blue9    { background-color: rgb(5, 21, 40);                 }
+  .bg-dark-blue10   { background-color: rgb(5, 18, 30);                 }
+  .bg-green         { background-color: rgb(0, 255, 0);                 }
+  .bg-green1        { background-color: rgb(28, 255, 20);               }
+  .bg-green2        { background-color: rgb(40, 255, 76);               }
+  .bg-green3        { background-color: rgb(60, 255, 60);               }
+  .bg-green4        { background-color: rgb(80, 255, 95);               }
+  .bg-green5        { background-color: rgb(100, 255, 126);             }
+  .bg-green6        { background-color: rgb(120, 255, 120)              }
+  .bg-green7        { background-color: rgb(140, 255, 150);             }
+  .bg-green8        { background-color: rgb(160, 255, 173);             }
+  .bg-green9        { background-color: rgb(180, 255, 193);             }
+  .bg-green10       { background-color: rgb(200, 255, 205);             }
+  .bg-dark-green    { background-color: rgb(5, 100, 18);                }
+  .bg-dark-green1   { background-color: rgb(5, 90, 19);                 }
+  .bg-dark-green2   { background-color: rgb(5, 85, 5);                  }
+  .bg-dark-green3   { background-color: rgb(5, 80, 11);                 }
+  .bg-dark-green4   { background-color: rgb(5, 70, 8);                  }
+  .bg-dark-green5   { background-color: rgb(5, 65, 5);                  }
+  .bg-dark-green6   { background-color: rgb(5, 60, 12);                 }
+  .bg-dark-green7   { background-color: rgb(5, 50, 9);                  }
+  .bg-dark-green8   { background-color: rgb(5, 45, 12);                 }
+  .bg-dark-green9   { background-color: rgb(5, 40, 13);                 }
+  .bg-dark-green10  { background-color: rgb(5, 30, 13);                 }
+  .bg-yellow        { background-color: rgb(255, 217, 0);               }
+  .bg-yellow1       { background-color: rgb(255, 231, 20);              }
+  .bg-yellow2       { background-color: rgb(255, 241, 40);              }
+  .bg-yellow3       { background-color: rgb(255, 242, 60);              }
+  .bg-yellow4       { background-color: rgb(255, 243, 80);              }
+  .bg-yellow5       { background-color: rgb(255, 232, 100);             }
+  .bg-yellow6       { background-color: rgb(255, 235, 120)              }
+  .bg-yellow7       { background-color: rgb(255, 253, 140);             }
+  .bg-yellow8       { background-color: rgb(255, 253, 160);             }
+  .bg-yellow9       { background-color: rgb(255, 254, 180);             }
+  .bg-yellow10      { background-color: rgb(255, 249, 200);             }
+  .bg-dark-yellow   { background-color: rgb(100, 90, 5);                }
+  .bg-dark-yellow1  { background-color: rgb(90, 82, 5);                 }
+  .bg-dark-yellow2  { background-color: rgb(85, 73, 5);                 }
+  .bg-dark-yellow3  { background-color: rgb(80, 75, 5);                 }
+  .bg-dark-yellow4  { background-color: rgb(70, 60, 5);                 }
+  .bg-dark-yellow5  { background-color: rgb(65, 61, 5);                 }
+  .bg-dark-yellow6  { background-color: rgb(60, 47, 5);                 }
+  .bg-dark-yellow7  { background-color: rgb(50, 45, 5);                 }
+  .bg-dark-yellow8  { background-color: rgb(45, 42, 5);                 }
+  .bg-dark-yellow9  { background-color: rgb(40, 35, 5);                 }
+  .bg-dark-yellow10 { background-color: rgb(30, 26, 5);                 }
+  .bg-orange        { background-color: rgb(255, 115, 0);               }
+  .bg-orange1       { background-color: rgb(255, 134, 20);              }
+  .bg-orange2       { background-color: rgb(255, 144, 40);              }
+  .bg-orange3       { background-color: rgb(255, 148, 60);              }
+  .bg-orange4       { background-color: rgb(255, 173, 80);              }
+  .bg-orange5       { background-color: rgb(255, 188, 100);             }
+  .bg-orange6       { background-color: rgb(255, 201, 120)              }
+  .bg-orange7       { background-color: rgb(255, 201, 140);             }
+  .bg-orange8       { background-color: rgb(255, 203, 160);             }
+  .bg-orange9       { background-color: rgb(255, 223, 180);             }
+  .bg-orange10      { background-color: rgb(255, 231, 200);             }
+  .bg-dark-orange   { background-color: rgb(100, 51, 5);                }
+  .bg-dark-orange1  { background-color: rgb(90, 46, 5);                 }
+  .bg-dark-orange2  { background-color: rgb(85, 44, 5);                 }
+  .bg-dark-orange3  { background-color: rgb(80, 41, 5);                 }
+  .bg-dark-orange4  { background-color: rgb(70, 36, 5);                 }
+  .bg-dark-orange5  { background-color: rgb(65, 34, 5);                 }
+  .bg-dark-orange6  { background-color: rgb(60, 22, 5);                 }
+  .bg-dark-orange7  { background-color: rgb(50, 23, 5);                 }
+  .bg-dark-orange8  { background-color: rgb(45, 20, 5);                 }
+  .bg-dark-orange9  { background-color: rgb(40, 15, 5);                 }
+  .bg-dark-orange10 { background-color: rgb(30, 15, 5);                 }
+  .bg-purple        { background-color: rgb(111, 0, 255);               }
+  .bg-purple1       { background-color: rgb(130, 20, 255);              }
+  .bg-purple2       { background-color: rgb(122, 40, 255);              }
+  .bg-purple3       { background-color: rgb(102, 60, 255);              }
+  .bg-purple4       { background-color: rgb(127, 80, 255);              }
+  .bg-purple5       { background-color: rgb(172, 100, 255);             }
+  .bg-purple6       { background-color: rgb(167, 120, 255)              }
+  .bg-purple7       { background-color: rgb(184, 140, 255);             }
+  .bg-purple8       { background-color: rgb(196, 160, 255);             }
+  .bg-purple9       { background-color: rgb(196, 180, 255);             }
+  .bg-purple10      { background-color: rgb(219, 200, 255);             }
+  .bg-dark-purple   { background-color: rgb(30, 5, 100);                }
+  .bg-dark-purple1  { background-color: rgb(35, 5, 90);                 }
+  .bg-dark-purple2  { background-color: rgb(22, 5, 85);                 }
+  .bg-dark-purple3  { background-color: rgb(31, 5, 80);                 }
+  .bg-dark-purple4  { background-color: rgb(19, 5, 70);                 }
+  .bg-dark-purple5  { background-color: rgb(16, 5, 65);                 }
+  .bg-dark-purple6  { background-color: rgb(13, 5, 60);                 }
+  .bg-dark-purple7  { background-color: rgb(17, 5, 50);                 }
+  .bg-dark-purple8  { background-color: rgb(16, 5, 45);                 }
+  .bg-dark-purple9  { background-color: rgb(13, 5, 40);                 }
+  .bg-dark-purple10 { background-color: rgb(10, 5, 30);                 }
+  .bg-gray          { background-color: rgb(40, 40, 40);                }
+  .bg-gray1         { background-color: rgb(60, 60, 60);                }
+  .bg-gray2         { background-color: rgb(80, 80, 80);                }
+  .bg-gray3         { background-color: rgb(100, 100, 100);             }
+  .bg-gray4         { background-color: rgb(120, 120, 120);             }
+  .bg-gray5         { background-color: rgb(140, 140, 140);             }
+  .bg-gray6         { background-color: rgb(160, 160, 160);             }
+  .bg-gray7         { background-color: rgb(180, 180, 180);             }
+  .bg-gray8         { background-color: rgb(200, 200, 200);             }
+  .bg-gray9         { background-color: rgb(220, 220, 220);             }
+  .bg-gray10        { background-color: rgb(240, 240, 240);             }
+  .bg-console       { background-color: #101015;                }
+  .bg-dark-gray     { background-color: rgb(40, 40, 40);                }
+  .bg-dark-gray1    { background-color: rgb(60, 60, 60);                }
+  .bg-dark-gray2    { background-color: rgb(80, 80, 80);                }
+  .bg-dark-gray3    { background-color: rgb(100, 100, 100);             }
+  .bg-dark-gray4    { background-color: rgb(120, 120, 120);             }
+  .bg-dark-gray5    { background-color: rgb(140, 140, 140);             }
+  .bg-dark-gray6    { background-color: rgb(160, 160, 160);             }
+  .bg-dark-gray7    { background-color: rgb(180, 180, 180);             }
+  .bg-dark-gray8    { background-color: rgb(200, 200, 200);             }
+  .bg-dark-gray9    { background-color: rgb(220, 220, 220);             }
+  .bg-dark-gray10   { background-color: rgb(240, 240, 240);             }
+  .bg-pink          { background-color: rgb(255, 0, 255);               }
+  .bg-pink1         { background-color: rgb(255, 20, 255);              }
+  .bg-pink2         { background-color: rgb(255, 40, 237);              }
+  .bg-pink3         { background-color: rgb(255, 60, 213);              }
+  .bg-pink4         { background-color: rgb(255, 80, 255);              }
+  .bg-pink5         { background-color: rgb(255, 100, 247);             }
+  .bg-pink6         { background-color: rgb(251, 120, 255)              }
+  .bg-pink7         { background-color: rgb(255, 140, 249);             }
+  .bg-pink8         { background-color: rgb(255, 160, 255);             }
+  .bg-pink9         { background-color: rgb(255, 180, 245);             }
+  .bg-pink10        { background-color: rgb(255, 200, 246);             }
+  .bg-dark-pink     { background-color: rgb(100, 5, 100);               }
+  .bg-dark-pink1    { background-color: rgb(90, 5, 79);                 }
+  .bg-dark-pink2    { background-color: rgb(82, 5, 85);                 }
+  .bg-dark-pink3    { background-color: rgb(80, 5, 68);                 }
+  .bg-dark-pink4    { background-color: rgb(70, 5, 67);                 }
+  .bg-dark-pink5    { background-color: rgb(65, 5, 57);                 }
+  .bg-dark-pink6    { background-color: rgb(60, 5, 55);                 }
+  .bg-dark-pink7    { background-color: rgb(50, 5, 46);                 }
+  .bg-dark-pink8    { background-color: rgb(45, 5, 40);                 }
+  .bg-dark-pink9    { background-color: rgb(40, 5, 40);                 }
+  .bg-dark-pink10   { background-color: rgb(30, 5, 28);                 }
+  
+  
+  
+  
+  
+  .hover-white:hover   { color: #fff; }
+  
+  .hover-transparent:hover{ background-color: #ffffff00; }
+  
+  .hover-black:hover   { color: #000; }
+  
+  .hover-custom-blue:hover{ color: #2a89e2; }
+  .hover-bg-custom-blue:hover{ background-color: #3278e0; }
+  .hover-bg-custom-blue2:hover{ background-color: #3278e0; }
+  
+  .hover-custom-gray-blue:hover{ color: #3c567e; }
+  .hover-bg-custom-gray-blue:hover{ background-color: #3c567e; }
+  .hover-bg-custom-gray-blue2:hover{ background-color: #222d3d; }
+  .hover-bg-custom-gray-purple:hover{ background-color: #574171; }
+  .hover-bg-custom-gray-purple2:hover{ background-color: #222d3d; }
+  
+  .hover-bg-white:hover{ background-color: #fff; }
+  
+  .hover-bg-transparent:hover{ background-color: #ffffff00; }
+  
+  .hover-bg-black:hover{ background-color: #000; }
+  
+  .hover-red:hover    { color: rgb(255, 0, 0);     }
+  .hover-red1:hover   { color: rgb(255, 20, 20);   }
+  .hover-red2:hover   { color: rgb(255, 40, 40);   }
+  .hover-red3:hover   { color: rgb(255, 60, 60);   }
+  .hover-red4:hover   { color: rgb(255, 80, 80);   }
+  .hover-red5:hover   { color: rgb(255, 100, 100); }
+  .hover-red6:hover   { color: rgb(255, 120, 120)  }
+  .hover-red7:hover   { color: rgb(255, 140, 140); }
+  .hover-red8:hover   { color: rgb(255, 160, 160); }
+  .hover-red9:hover   { color: rgb(255, 180, 180); }
+  .hover-red10:hover  { color: rgb(255, 200, 200); }
+  
+  .hover-dark-red-gradient:hover   { background-image: linear-gradient(to right, rgb(100, 5, 5), rgb(96, 37, 7)); }
+  
+  .hover-dark-red:hover   { color: rgb(100, 5, 5); }
+  .hover-dark-red1:hover  { color: rgb(90, 5, 5);  }
+  .hover-dark-red2:hover  { color: rgb(85, 5, 5);  }
+  .hover-dark-red3:hover  { color: rgb(80, 5, 5);  }
+  .hover-dark-red4:hover  { color: rgb(70, 5, 5);  }
+  .hover-dark-red5:hover  { color: rgb(65, 5, 5);  }
+  .hover-dark-red6:hover  { color: rgb(60, 5, 5);  }
+  .hover-dark-red7:hover  { color: rgb(50, 5, 5);  }
+  .hover-dark-red8:hover  { color: rgb(45, 5, 5);  }
+  .hover-dark-red9:hover  { color: rgb(40, 5, 5);  }
+  .hover-dark-red10:hover { color: rgb(30, 5, 5);  }
+  
+  .hover-blue:hover    { color: rgb(0, 119, 255);   }
+  .hover-blue1:hover   { color: rgb(20, 141, 255);  }
+  .hover-blue2:hover   { color: rgb(40, 151, 255);  }
+  .hover-blue3:hover   { color: rgb(60, 167, 255);  }
+  .hover-blue4:hover   { color: rgb(80, 170, 255);  }
+  .hover-blue5:hover   { color: rgb(100, 172, 255); }
+  .hover-blue6:hover   { color: rgb(120, 183, 255)  }
+  .hover-blue7:hover   { color: rgb(140, 186, 255); }
+  .hover-blue8:hover   { color: rgb(160, 209, 255); }
+  .hover-blue9:hover   { color: rgb(180, 215, 255); }
+  .hover-blue10:hover  { color: rgb(200, 230, 255); }
+  
+  .hover-dark-blue:hover   { color: rgb(5, 43, 100); }
+  .hover-dark-blue1:hover  { color: rgb(5, 39, 90);  }
+  .hover-dark-blue2:hover  { color: rgb(5, 40, 85);  }
+  .hover-dark-blue3:hover  { color: rgb(5, 40, 80);  }
+  .hover-dark-blue4:hover  { color: rgb(5, 33, 70);  }
+  .hover-dark-blue5:hover  { color: rgb(5, 29, 65);  }
+  .hover-dark-blue6:hover  { color: rgb(5, 29, 60);  }
+  .hover-dark-blue7:hover  { color: rgb(5, 24, 50);  }
+  .hover-dark-blue8:hover  { color: rgb(5, 26, 45);  }
+  .hover-dark-blue9:hover  { color: rgb(5, 21, 40);  }
+  .hover-dark-blue10:hover { color: rgb(5, 18, 30);  }
+  
+  .hover-green:hover    { color: rgb(0, 255, 0);     }
+  .hover-green1:hover   { color: rgb(28, 255, 20);   }
+  .hover-green2:hover   { color: rgb(40, 255, 76);   }
+  .hover-green3:hover   { color: rgb(60, 255, 60);   }
+  .hover-green4:hover   { color: rgb(80, 255, 95);   }
+  .hover-green5:hover   { color: rgb(100, 255, 126); }
+  .hover-green6:hover   { color: rgb(120, 255, 120)  }
+  .hover-green7:hover   { color: rgb(140, 255, 150); }
+  .hover-green8:hover   { color: rgb(160, 255, 173); }
+  .hover-green9:hover   { color: rgb(180, 255, 193); }
+  .hover-green10:hover  { color: rgb(200, 255, 205); }
+  
+  .hover-dark-green:hover   { color: rgb(5, 100, 18); }
+  .hover-dark-green1:hover  { color: rgb(5, 90, 19);  }
+  .hover-dark-green2:hover  { color: rgb(5, 85, 5);   }
+  .hover-dark-green3:hover  { color: rgb(5, 80, 11);  }
+  .hover-dark-green4:hover  { color: rgb(5, 70, 8);   }
+  .hover-dark-green5:hover  { color: rgb(5, 65, 5);   }
+  .hover-dark-green6:hover  { color: rgb(5, 60, 12);  }
+  .hover-dark-green7:hover  { color: rgb(5, 50, 9);   }
+  .hover-dark-green8:hover  { color: rgb(5, 45, 12);  }
+  .hover-dark-green9:hover  { color: rgb(5, 40, 13);  }
+  .hover-dark-green10:hover { color: rgb(5, 30, 13);  }
+  
+  .hover-yellow:hover    { color: rgb(255, 217, 0);   }
+  .hover-yellow1:hover   { color: rgb(255, 231, 20);  }
+  .hover-yellow2:hover   { color: rgb(255, 241, 40);  }
+  .hover-yellow3:hover   { color: rgb(255, 242, 60);  }
+  .hover-yellow4:hover   { color: rgb(255, 243, 80);  }
+  .hover-yellow5:hover   { color: rgb(255, 232, 100); }
+  .hover-yellow6:hover   { color: rgb(255, 235, 120)  }
+  .hover-yellow7:hover   { color: rgb(255, 253, 140); }
+  .hover-yellow8:hover   { color: rgb(255, 253, 160); }
+  .hover-yellow9:hover   { color: rgb(255, 254, 180); }
+  .hover-yellow10:hover  { color: rgb(255, 249, 200); }
+  
+  .hover-dark-yellow:hover   { color: rgb(100, 90, 5); }
+  .hover-dark-yellow1:hover  { color: rgb(90, 82, 5);  }
+  .hover-dark-yellow2:hover  { color: rgb(85, 73, 5);  }
+  .hover-dark-yellow3:hover  { color: rgb(80, 75, 5);  }
+  .hover-dark-yellow4:hover  { color: rgb(70, 60, 5);  }
+  .hover-dark-yellow5:hover  { color: rgb(65, 61, 5);  }
+  .hover-dark-yellow6:hover  { color: rgb(60, 47, 5);  }
+  .hover-dark-yellow7:hover  { color: rgb(50, 45, 5);  }
+  .hover-dark-yellow8:hover  { color: rgb(45, 42, 5);  }
+  .hover-dark-yellow9:hover  { color: rgb(40, 35, 5);  }
+  .hover-dark-yellow10:hover { color: rgb(30, 26, 5);  }
+  
+  .hover-orange:hover    { color: rgb(255, 115, 0);   }
+  .hover-orange1:hover   { color: rgb(255, 134, 20);  }
+  .hover-orange2:hover   { color: rgb(255, 144, 40);  }
+  .hover-orange3:hover   { color: rgb(255, 148, 60);  }
+  .hover-orange4:hover   { color: rgb(255, 173, 80);  }
+  .hover-orange5:hover   { color: rgb(255, 188, 100); }
+  .hover-orange6:hover   { color: rgb(255, 201, 120)  }
+  .hover-orange7:hover   { color: rgb(255, 201, 140); }
+  .hover-orange8:hover   { color: rgb(255, 203, 160); }
+  .hover-orange9:hover   { color: rgb(255, 223, 180); }
+  .hover-orange10:hover  { color: rgb(255, 231, 200); }
+  
+  .hover-dark-orange:hover   { color: rgb(100, 51, 5); }
+  .hover-dark-orange1:hover  { color: rgb(90, 46, 5);  }
+  .hover-dark-orange2:hover  { color: rgb(85, 44, 5);  }
+  .hover-dark-orange3:hover  { color: rgb(80, 41, 5);  }
+  .hover-dark-orange4:hover  { color: rgb(70, 36, 5);  }
+  .hover-dark-orange5:hover  { color: rgb(65, 34, 5);  }
+  .hover-dark-orange6:hover  { color: rgb(60, 22, 5);  }
+  .hover-dark-orange7:hover  { color: rgb(50, 23, 5);  }
+  .hover-dark-orange8:hover  { color: rgb(45, 20, 5);  }
+  .hover-dark-orange9:hover  { color: rgb(40, 15, 5);  }
+  .hover-dark-orange10:hover { color: rgb(30, 15, 5);  }
+  
+  .hover-purple:hover    { color: rgb(111, 0, 255);   }
+  .hover-purple1:hover   { color: rgb(130, 20, 255);  }
+  .hover-purple2:hover   { color: rgb(122, 40, 255);  }
+  .hover-purple3:hover   { color: rgb(102, 60, 255);  }
+  .hover-purple4:hover   { color: rgb(127, 80, 255);  }
+  .hover-purple5:hover   { color: rgb(172, 100, 255); }
+  .hover-purple6:hover   { color: rgb(167, 120, 255)  }
+  .hover-purple7:hover   { color: rgb(184, 140, 255); }
+  .hover-purple8:hover   { color: rgb(196, 160, 255); }
+  .hover-purple9:hover   { color: rgb(196, 180, 255); }
+  .hover-purple10:hover  { color: rgb(219, 200, 255); }
+  
+  .hover-dark-purple:hover   { color: rgb(30, 5, 100); }
+  .hover-dark-purple1:hover  { color: rgb(35, 5, 90);  }
+  .hover-dark-purple2:hover  { color: rgb(22, 5, 85);  }
+  .hover-dark-purple3:hover  { color: rgb(31, 5, 80);  }
+  .hover-dark-purple4:hover  { color: rgb(19, 5, 70);  }
+  .hover-dark-purple5:hover  { color: rgb(16, 5, 65);  }
+  .hover-dark-purple6:hover  { color: rgb(13, 5, 60);  }
+  .hover-dark-purple7:hover  { color: rgb(17, 5, 50);  }
+  .hover-dark-purple8:hover  { color: rgb(16, 5, 45);  }
+  .hover-dark-purple9:hover  { color: rgb(13, 5, 40);  }
+  .hover-dark-purple10:hover { color: rgb(10, 5, 30);  }
+  
+  .hover-gray:hover    { color: rgb(40, 40, 40);    }
+  .hover-gray1:hover   { color: rgb(60, 60, 60);    }
+  .hover-gray2:hover   { color: rgb(80, 80, 80);    }
+  .hover-gray3:hover   { color: rgb(100, 100, 100); }
+  .hover-gray4:hover   { color: rgb(120, 120, 120); }
+  .hover-gray5:hover   { color: rgb(140, 140, 140); }
+  .hover-gray6:hover   { color: rgb(160, 160, 160); }
+  .hover-gray7:hover   { color: rgb(180, 180, 180); }
+  .hover-gray8:hover   { color: rgb(200, 200, 200); }
+  .hover-gray9:hover   { color: rgb(220, 220, 220); }
+  .hover-gray10:hover  { color: rgb(240, 240, 240); }
+  
+  .hover-dark-gray:hover    { color: rgb(40, 40, 40);    }
+  .hover-dark-gray1:hover   { color: rgb(60, 60, 60);    }
+  .hover-dark-gray2:hover   { color: rgb(80, 80, 80);    }
+  .hover-dark-gray3:hover   { color: rgb(100, 100, 100); }
+  .hover-dark-gray4:hover   { color: rgb(120, 120, 120); }
+  .hover-dark-gray5:hover   { color: rgb(140, 140, 140); }
+  .hover-dark-gray6:hover   { color: rgb(160, 160, 160); }
+  .hover-dark-gray7:hover   { color: rgb(180, 180, 180); }
+  .hover-dark-gray8:hover   { color: rgb(200, 200, 200); }
+  .hover-dark-gray9:hover   { color: rgb(220, 220, 220); }
+  .hover-dark-gray10:hover  { color: rgb(240, 240, 240); }
+  
+  .hover-pink:hover    { color: rgb(255, 0, 255);   }
+  .hover-pink1:hover   { color: rgb(255, 20, 255);  }
+  .hover-pink2:hover   { color: rgb(255, 40, 237);  }
+  .hover-pink3:hover   { color: rgb(255, 60, 213);  }
+  .hover-pink4:hover   { color: rgb(255, 80, 255);  }
+  .hover-pink5:hover   { color: rgb(255, 100, 247); }
+  .hover-pink6:hover   { color: rgb(251, 120, 255)  }
+  .hover-pink7:hover   { color: rgb(255, 140, 249); }
+  .hover-pink8:hover   { color: rgb(255, 160, 255); }
+  .hover-pink9:hover   { color: rgb(255, 180, 245); }
+  .hover-pink10:hover  { color: rgb(255, 200, 246); }
+  
+  .hover-dark-pink:hover   { color: rgb(100, 5, 100); }
+  .hover-dark-pink1:hover  { color: rgb(90, 5, 79);   }
+  .hover-dark-pink2:hover  { color: rgb(82, 5, 85);   }
+  .hover-dark-pink3:hover  { color: rgb(80, 5, 68);   }
+  .hover-dark-pink4:hover  { color: rgb(70, 5, 67);   }
+  .hover-dark-pink5:hover  { color: rgb(65, 5, 57);   }
+  .hover-dark-pink6:hover  { color: rgb(60, 5, 55);   }
+  .hover-dark-pink7:hover  { color: rgb(50, 5, 46);   }
+  .hover-dark-pink8:hover  { color: rgb(45, 5, 40);   }
+  .hover-dark-pink9:hover  { color: rgb(40, 5, 40);   }
+  .hover-dark-pink10:hover { color: rgb(30, 5, 28);   }
+  
+  .hover-bg-dark-blue-gradient:hover  { background-image: linear-gradient(to right, rgb(47, 61, 96), rgb(45, 139, 109)); }
+  
+  .hover-bg-dark-blue-green:hover     { background-color: rgb(22, 80, 102); }
+  .hover-bg-dark-blue-green2:hover    { background-color: rgb(17, 91, 95);  }
+  
+  .hover-bg-blue-gradient:hover       { background-image: linear-gradient(to right, rgb(128, 181, 255), rgb(87, 255, 202)); }
+  
+  .hover-bg-dark-red-gradient:hover   { background-image: linear-gradient(to right, rgb(96, 47, 47), rgb(139, 76, 45));     }
+  .hover-bg-red-gradient:hover       { background-image: linear-gradient(to right, rgb(255, 128, 128), rgb(255, 143, 87)); }
+  
+  .hover-bg-red:hover           { background-color: rgb(255, 0, 0);                 }
+  .hover-bg-red1:hover          { background-color: rgb(255, 20, 20);               }
+  .hover-bg-red2:hover          { background-color: rgb(255, 40, 40);               }
+  .hover-bg-red3:hover          { background-color: rgb(255, 60, 60);               }
+  .hover-bg-red4:hover          { background-color: rgb(255, 80, 80);               }
+  .hover-bg-red5:hover          { background-color: rgb(255, 100, 100);             }
+  .hover-bg-red6:hover          { background-color: rgb(255, 120, 120)              }
+  .hover-bg-red7:hover          { background-color: rgb(255, 140, 140);             }
+  .hover-bg-red8:hover          { background-color: rgb(255, 160, 160);             }
+  .hover-bg-red9:hover          { background-color: rgb(255, 180, 180);             }
+  .hover-bg-red10:hover         { background-color: rgb(255, 200, 200);             }
+  .hover-bg-dark-red:hover      { background-color: rgb(100, 5, 5);                 }
+  .hover-bg-dark-red1:hover     { background-color: rgb(90, 5, 5);                  }
+  .hover-bg-dark-red2:hover     { background-color: rgb(85, 5, 5);                  }
+  .hover-bg-dark-red3:hover     { background-color: rgb(80, 5, 5);                  }
+  .hover-bg-dark-red4:hover     { background-color: rgb(70, 5, 5);                  }
+  .hover-bg-dark-red5:hover     { background-color: rgb(65, 5, 5);                  }
+  .hover-bg-dark-red6:hover     { background-color: rgb(60, 5, 5);                  }
+  .hover-bg-dark-red7:hover     { background-color: rgb(50, 5, 5);                  }
+  .hover-bg-dark-red8:hover     { background-color: rgb(45, 5, 5);                  }
+  .hover-bg-dark-red9:hover     { background-color: rgb(40, 5, 5);                  }
+  .hover-bg-dark-red10:hover    { background-color: rgb(30, 5, 5);                  }
+  .hover-bg-blue:hover          { background-color: rgb(0, 119, 255);               }
+  .hover-bg-blue1:hover         { background-color: rgb(20, 141, 255);              }
+  .hover-bg-blue2:hover         { background-color: rgb(40, 151, 255);              }
+  .hover-bg-blue3:hover         { background-color: rgb(60, 167, 255);              }
+  .hover-bg-blue4:hover         { background-color: rgb(80, 170, 255);              }
+  .hover-bg-blue5:hover         { background-color: rgb(100, 172, 255);             }
+  .hover-bg-blue6:hover         { background-color: rgb(120, 183, 255)              }
+  .hover-bg-blue7:hover         { background-color: rgb(140, 186, 255);             }
+  .hover-bg-blue8:hover         { background-color: rgb(160, 209, 255);             }
+  .hover-bg-blue9:hover         { background-color: rgb(180, 215, 255);             }
+  .hover-bg-blue10:hover        { background-color: rgb(200, 230, 255);             }
+  .hover-bg-dark-blue:hover     { background-color: rgb(5, 43, 100);                }
+  .hover-bg-dark-blue1:hover    { background-color: rgb(5, 39, 90);                 }
+  .hover-bg-dark-blue2:hover    { background-color: rgb(5, 40, 85);                 }
+  .hover-bg-dark-blue3:hover    { background-color: rgb(5, 40, 80);                 }
+  .hover-bg-dark-blue4:hover    { background-color: rgb(5, 33, 70);                 }
+  .hover-bg-dark-blue5:hover    { background-color: rgb(5, 29, 65);                 }
+  .hover-bg-dark-blue6:hover    { background-color: rgb(5, 29, 60);                 }
+  .hover-bg-dark-blue7:hover    { background-color: rgb(5, 24, 50);                 }
+  .hover-bg-dark-blue8:hover    { background-color: rgb(5, 26, 45);                 }
+  .hover-bg-dark-blue9:hover    { background-color: rgb(5, 21, 40);                 }
+  .hover-bg-dark-blue10:hover   { background-color: rgb(5, 18, 30);                 }
+  .hover-bg-green:hover         { background-color: rgb(0, 255, 0);                 }
+  .hover-bg-green1:hover        { background-color: rgb(28, 255, 20);               }
+  .hover-bg-green2:hover        { background-color: rgb(40, 255, 76);               }
+  .hover-bg-green3:hover        { background-color: rgb(60, 255, 60);               }
+  .hover-bg-green4:hover        { background-color: rgb(80, 255, 95);               }
+  .hover-bg-green5:hover        { background-color: rgb(100, 255, 126);             }
+  .hover-bg-green6:hover        { background-color: rgb(120, 255, 120)              }
+  .hover-bg-green7:hover        { background-color: rgb(140, 255, 150);             }
+  .hover-bg-green8:hover        { background-color: rgb(160, 255, 173);             }
+  .hover-bg-green9:hover        { background-color: rgb(180, 255, 193);             }
+  .hover-bg-green10:hover       { background-color: rgb(200, 255, 205);             }
+  .hover-bg-dark-green:hover    { background-color: rgb(5, 100, 18);                }
+  .hover-bg-dark-green1:hover   { background-color: rgb(5, 90, 19);                 }
+  .hover-bg-dark-green2:hover   { background-color: rgb(5, 85, 5);                  }
+  .hover-bg-dark-green3:hover   { background-color: rgb(5, 80, 11);                 }
+  .hover-bg-dark-green4:hover   { background-color: rgb(5, 70, 8);                  }
+  .hover-bg-dark-green5:hover   { background-color: rgb(5, 65, 5);                  }
+  .hover-bg-dark-green6:hover   { background-color: rgb(5, 60, 12);                 }
+  .hover-bg-dark-green7:hover   { background-color: rgb(5, 50, 9);                  }
+  .hover-bg-dark-green8:hover   { background-color: rgb(5, 45, 12);                 }
+  .hover-bg-dark-green9:hover   { background-color: rgb(5, 40, 13);                 }
+  .hover-bg-dark-green10:hover  { background-color: rgb(5, 30, 13);                 }
+  .hover-bg-yellow:hover        { background-color: rgb(255, 217, 0);               }
+  .hover-bg-yellow1:hover       { background-color: rgb(255, 231, 20);              }
+  .hover-bg-yellow2:hover       { background-color: rgb(255, 241, 40);              }
+  .hover-bg-yellow3:hover       { background-color: rgb(255, 242, 60);              }
+  .hover-bg-yellow4:hover       { background-color: rgb(255, 243, 80);              }
+  .hover-bg-yellow5:hover       { background-color: rgb(255, 232, 100);             }
+  .hover-bg-yellow6:hover       { background-color: rgb(255, 235, 120)              }
+  .hover-bg-yellow7:hover       { background-color: rgb(255, 253, 140);             }
+  .hover-bg-yellow8:hover       { background-color: rgb(255, 253, 160);             }
+  .hover-bg-yellow9:hover       { background-color: rgb(255, 254, 180);             }
+  .hover-bg-yellow10:hover      { background-color: rgb(255, 249, 200);             }
+  .hover-bg-dark-yellow:hover   { background-color: rgb(100, 90, 5);                }
+  .hover-bg-dark-yellow1:hover  { background-color: rgb(90, 82, 5);                 }
+  .hover-bg-dark-yellow2:hover  { background-color: rgb(85, 73, 5);                 }
+  .hover-bg-dark-yellow3:hover  { background-color: rgb(80, 75, 5);                 }
+  .hover-bg-dark-yellow4:hover  { background-color: rgb(70, 60, 5);                 }
+  .hover-bg-dark-yellow5:hover  { background-color: rgb(65, 61, 5);                 }
+  .hover-bg-dark-yellow6:hover  { background-color: rgb(60, 47, 5);                 }
+  .hover-bg-dark-yellow7:hover  { background-color: rgb(50, 45, 5);                 }
+  .hover-bg-dark-yellow8:hover  { background-color: rgb(45, 42, 5);                 }
+  .hover-bg-dark-yellow9:hover  { background-color: rgb(40, 35, 5);                 }
+  .hover-bg-dark-yellow10:hover { background-color: rgb(30, 26, 5);                 }
+  .hover-bg-orange:hover        { background-color: rgb(255, 115, 0);               }
+  .hover-bg-orange1:hover       { background-color: rgb(255, 134, 20);              }
+  .hover-bg-orange2:hover       { background-color: rgb(255, 144, 40);              }
+  .hover-bg-orange3:hover       { background-color: rgb(255, 148, 60);              }
+  .hover-bg-orange4:hover       { background-color: rgb(255, 173, 80);              }
+  .hover-bg-orange5:hover       { background-color: rgb(255, 188, 100);             }
+  .hover-bg-orange6:hover       { background-color: rgb(255, 201, 120)              }
+  .hover-bg-orange7:hover       { background-color: rgb(255, 201, 140);             }
+  .hover-bg-orange8:hover       { background-color: rgb(255, 203, 160);             }
+  .hover-bg-orange9:hover       { background-color: rgb(255, 223, 180);             }
+  .hover-bg-orange10:hover      { background-color: rgb(255, 231, 200);             }
+  .hover-bg-dark-orange:hover   { background-color: rgb(100, 51, 5);                }
+  .hover-bg-dark-orange1:hover  { background-color: rgb(90, 46, 5);                 }
+  .hover-bg-dark-orange2:hover  { background-color: rgb(85, 44, 5);                 }
+  .hover-bg-dark-orange3:hover  { background-color: rgb(80, 41, 5);                 }
+  .hover-bg-dark-orange4:hover  { background-color: rgb(70, 36, 5);                 }
+  .hover-bg-dark-orange5:hover  { background-color: rgb(65, 34, 5);                 }
+  .hover-bg-dark-orange6:hover  { background-color: rgb(60, 22, 5);                 }
+  .hover-bg-dark-orange7:hover  { background-color: rgb(50, 23, 5);                 }
+  .hover-bg-dark-orange8:hover  { background-color: rgb(45, 20, 5);                 }
+  .hover-bg-dark-orange9:hover  { background-color: rgb(40, 15, 5);                 }
+  .hover-bg-dark-orange10:hover { background-color: rgb(30, 15, 5);                 }
+  .hover-bg-purple:hover        { background-color: rgb(111, 0, 255);               }
+  .hover-bg-purple1:hover       { background-color: rgb(130, 20, 255);              }
+  .hover-bg-purple2:hover       { background-color: rgb(122, 40, 255);              }
+  .hover-bg-purple3:hover       { background-color: rgb(102, 60, 255);              }
+  .hover-bg-purple4:hover       { background-color: rgb(127, 80, 255);              }
+  .hover-bg-purple5:hover       { background-color: rgb(172, 100, 255);             }
+  .hover-bg-purple6:hover       { background-color: rgb(167, 120, 255)              }
+  .hover-bg-purple7:hover       { background-color: rgb(184, 140, 255);             }
+  .hover-bg-purple8:hover       { background-color: rgb(196, 160, 255);             }
+  .hover-bg-purple9:hover       { background-color: rgb(196, 180, 255);             }
+  .hover-bg-purple10:hover      { background-color: rgb(219, 200, 255);             }
+  .hover-bg-dark-purple:hover   { background-color: rgb(30, 5, 100);                }
+  .hover-bg-dark-purple1:hover  { background-color: rgb(35, 5, 90);                 }
+  .hover-bg-dark-purple2:hover  { background-color: rgb(22, 5, 85);                 }
+  .hover-bg-dark-purple3:hover  { background-color: rgb(31, 5, 80);                 }
+  .hover-bg-dark-purple4:hover  { background-color: rgb(19, 5, 70);                 }
+  .hover-bg-dark-purple5:hover  { background-color: rgb(16, 5, 65);                 }
+  .hover-bg-dark-purple6:hover  { background-color: rgb(13, 5, 60);                 }
+  .hover-bg-dark-purple7:hover  { background-color: rgb(17, 5, 50);                 }
+  .hover-bg-dark-purple8:hover  { background-color: rgb(16, 5, 45);                 }
+  .hover-bg-dark-purple9:hover  { background-color: rgb(13, 5, 40);                 }
+  .hover-bg-dark-purple10:hover { background-color: rgb(10, 5, 30);                 }
+  .hover-bg-gray:hover          { background-color: rgb(40, 40, 40);                }
+  .hover-bg-gray1:hover         { background-color: rgb(60, 60, 60);                }
+  .hover-bg-gray2:hover         { background-color: rgb(80, 80, 80);                }
+  .hover-bg-gray3:hover         { background-color: rgb(100, 100, 100);             }
+  .hover-bg-gray4:hover         { background-color: rgb(120, 120, 120);             }
+  .hover-bg-gray5:hover         { background-color: rgb(140, 140, 140);             }
+  .hover-bg-gray6:hover         { background-color: rgb(160, 160, 160);             }
+  .hover-bg-gray7:hover         { background-color: rgb(180, 180, 180);             }
+  .hover-bg-gray8:hover         { background-color: rgb(200, 200, 200);             }
+  .hover-bg-gray9:hover         { background-color: rgb(220, 220, 220);             }
+  .hover-bg-gray10:hover        { background-color: rgb(240, 240, 240);             }
+  .hover-bg-console:hover       { background-color: rgb(16, 16, 21);                }
+  .hover-bg-dark-gray:hover     { background-color: rgb(40, 40, 40);                }
+  .hover-bg-dark-gray1:hover    { background-color: rgb(60, 60, 60);                }
+  .hover-bg-dark-gray2:hover    { background-color: rgb(80, 80, 80);                }
+  .hover-bg-dark-gray3:hover    { background-color: rgb(100, 100, 100);             }
+  .hover-bg-dark-gray4:hover    { background-color: rgb(120, 120, 120);             }
+  .hover-bg-dark-gray5:hover    { background-color: rgb(140, 140, 140);             }
+  .hover-bg-dark-gray6:hover    { background-color: rgb(160, 160, 160);             }
+  .hover-bg-dark-gray7:hover    { background-color: rgb(180, 180, 180);             }
+  .hover-bg-dark-gray8:hover    { background-color: rgb(200, 200, 200);             }
+  .hover-bg-dark-gray9:hover    { background-color: rgb(220, 220, 220);             }
+  .hover-bg-dark-gray10:hover   { background-color: rgb(240, 240, 240);             }
+  .hover-bg-pink:hover          { background-color: rgb(255, 0, 255);               }
+  .hover-bg-pink1:hover         { background-color: rgb(255, 20, 255);              }
+  .hover-bg-pink2:hover         { background-color: rgb(255, 40, 237);              }
+  .hover-bg-pink3:hover         { background-color: rgb(255, 60, 213);              }
+  .hover-bg-pink4:hover         { background-color: rgb(255, 80, 255);              }
+  .hover-bg-pink5:hover         { background-color: rgb(255, 100, 247);             }
+  .hover-bg-pink6:hover         { background-color: rgb(251, 120, 255)              }
+  .hover-bg-pink7:hover         { background-color: rgb(255, 140, 249);             }
+  .hover-bg-pink8:hover         { background-color: rgb(255, 160, 255);             }
+  .hover-bg-pink9:hover         { background-color: rgb(255, 180, 245);             }
+  .hover-bg-pink10:hover        { background-color: rgb(255, 200, 246);             }
+  .hover-bg-dark-pink:hover     { background-color: rgb(100, 5, 100);               }
+  .hover-bg-dark-pink1:hover    { background-color: rgb(90, 5, 79);                 }
+  .hover-bg-dark-pink2:hover    { background-color: rgb(82, 5, 85);                 }
+  .hover-bg-dark-pink3:hover    { background-color: rgb(80, 5, 68);                 }
+  .hover-bg-dark-pink4:hover    { background-color: rgb(70, 5, 67);                 }
+  .hover-bg-dark-pink5:hover    { background-color: rgb(65, 5, 57);                 }
+  .hover-bg-dark-pink6:hover    { background-color: rgb(60, 5, 55);                 }
+  .hover-bg-dark-pink7:hover    { background-color: rgb(50, 5, 46);                 }
+  .hover-bg-dark-pink8:hover    { background-color: rgb(45, 5, 40);                 }
+  .hover-bg-dark-pink9:hover    { background-color: rgb(40, 5, 40);                 }
+  .hover-bg-dark-pink10:hover   { background-color: rgb(30, 5, 28);                 }
+  
+  .b-red    { color: rgb(255, 0, 0);     }
+  .b-red1   { color: rgb(255, 20, 20);   }
+  .b-red2   { color: rgb(255, 40, 40);   }
+  .b-red3   { color: rgb(255, 60, 60);   }
+  .b-red4   { color: rgb(255, 80, 80);   }
+  .b-red5   { color: rgb(255, 100, 100); }
+  .b-red6   { color: rgb(255, 120, 120)  }
+  .b-red7   { color: rgb(255, 140, 140); }
+  .b-red8   { color: rgb(255, 160, 160); }
+  .b-red9   { color: rgb(255, 180, 180); }
+  .b-red10  { color: rgb(255, 200, 200); }
+  
+  .b-dark-red-gradient   { background-image: linear-gradient(to right, rgb(100, 5, 5), rgb(96, 37, 7)); }
+  
+  .b-dark-red   { color: rgb(100, 5, 5); }
+  .b-dark-red1  { color: rgb(90, 5, 5);  }
+  .b-dark-red2  { color: rgb(85, 5, 5);  }
+  .b-dark-red3  { color: rgb(80, 5, 5);  }
+  .b-dark-red4  { color: rgb(70, 5, 5);  }
+  .b-dark-red5  { color: rgb(65, 5, 5);  }
+  .b-dark-red6  { color: rgb(60, 5, 5);  }
+  .b-dark-red7  { color: rgb(50, 5, 5);  }
+  .b-dark-red8  { color: rgb(45, 5, 5);  }
+  .b-dark-red9  { color: rgb(40, 5, 5);  }
+  .b-dark-red10 { color: rgb(30, 5, 5);  }
+  
+  .b-blue    { color: rgb(0, 119, 255);   }
+  .b-blue1   { color: rgb(20, 141, 255);  }
+  .b-blue2   { color: rgb(40, 151, 255);  }
+  .b-blue3   { color: rgb(60, 167, 255);  }
+  .b-blue4   { color: rgb(80, 170, 255);  }
+  .b-blue5   { color: rgb(100, 172, 255); }
+  .b-blue6   { color: rgb(120, 183, 255)  }
+  .b-blue7   { color: rgb(140, 186, 255); }
+  .b-blue8   { color: rgb(160, 209, 255); }
+  .b-blue9   { color: rgb(180, 215, 255); }
+  .b-blue10  { color: rgb(200, 230, 255); }
+  
+  .b-dark-blue   { color: rgb(5, 43, 100); }
+  .b-dark-blue1  { color: rgb(5, 39, 90);  }
+  .b-dark-blue2  { color: rgb(5, 40, 85);  }
+  .b-dark-blue3  { color: rgb(5, 40, 80);  }
+  .b-dark-blue4  { color: rgb(5, 33, 70);  }
+  .b-dark-blue5  { color: rgb(5, 29, 65);  }
+  .b-dark-blue6  { color: rgb(5, 29, 60);  }
+  .b-dark-blue7  { color: rgb(5, 24, 50);  }
+  .b-dark-blue8  { color: rgb(5, 26, 45);  }
+  .b-dark-blue9  { color: rgb(5, 21, 40);  }
+  .b-dark-blue10 { color: rgb(5, 18, 30);  }
+  
+  .b-green    { color: rgb(0, 255, 0);     }
+  .b-green1   { color: rgb(28, 255, 20);   }
+  .b-green2   { color: rgb(40, 255, 76);   }
+  .b-green3   { color: rgb(60, 255, 60);   }
+  .b-green4   { color: rgb(80, 255, 95);   }
+  .b-green5   { color: rgb(100, 255, 126); }
+  .b-green6   { color: rgb(120, 255, 120)  }
+  .b-green7   { color: rgb(140, 255, 150); }
+  .b-green8   { color: rgb(160, 255, 173); }
+  .b-green9   { color: rgb(180, 255, 193); }
+  .b-green10  { color: rgb(200, 255, 205); }
+  
+  .b-dark-green   { color: rgb(5, 100, 18); }
+  .b-dark-green1  { color: rgb(5, 90, 19);  }
+  .b-dark-green2  { color: rgb(5, 85, 5);   }
+  .b-dark-green3  { color: rgb(5, 80, 11);  }
+  .b-dark-green4  { color: rgb(5, 70, 8);   }
+  .b-dark-green5  { color: rgb(5, 65, 5);   }
+  .b-dark-green6  { color: rgb(5, 60, 12);  }
+  .b-dark-green7  { color: rgb(5, 50, 9);   }
+  .b-dark-green8  { color: rgb(5, 45, 12);  }
+  .b-dark-green9  { color: rgb(5, 40, 13);  }
+  .b-dark-green10 { color: rgb(5, 30, 13);  }
+  
+  .b-yellow    { color: rgb(255, 217, 0);   }
+  .b-yellow1   { color: rgb(255, 231, 20);  }
+  .b-yellow2   { color: rgb(255, 241, 40);  }
+  .b-yellow3   { color: rgb(255, 242, 60);  }
+  .b-yellow4   { color: rgb(255, 243, 80);  }
+  .b-yellow5   { color: rgb(255, 232, 100); }
+  .b-yellow6   { color: rgb(255, 235, 120)  }
+  .b-yellow7   { color: rgb(255, 253, 140); }
+  .b-yellow8   { color: rgb(255, 253, 160); }
+  .b-yellow9   { color: rgb(255, 254, 180); }
+  .b-yellow10  { color: rgb(255, 249, 200); }
+  
+  .b-dark-yellow   { color: rgb(100, 90, 5); }
+  .b-dark-yellow1  { color: rgb(90, 82, 5);  }
+  .b-dark-yellow2  { color: rgb(85, 73, 5);  }
+  .b-dark-yellow3  { color: rgb(80, 75, 5);  }
+  .b-dark-yellow4  { color: rgb(70, 60, 5);  }
+  .b-dark-yellow5  { color: rgb(65, 61, 5);  }
+  .b-dark-yellow6  { color: rgb(60, 47, 5);  }
+  .b-dark-yellow7  { color: rgb(50, 45, 5);  }
+  .b-dark-yellow8  { color: rgb(45, 42, 5);  }
+  .b-dark-yellow9  { color: rgb(40, 35, 5);  }
+  .b-dark-yellow10 { color: rgb(30, 26, 5);  }
+  
+  .b-orange    { color: rgb(255, 115, 0);   }
+  .b-orange1   { color: rgb(255, 134, 20);  }
+  .b-orange2   { color: rgb(255, 144, 40);  }
+  .b-orange3   { color: rgb(255, 148, 60);  }
+  .b-orange4   { color: rgb(255, 173, 80);  }
+  .b-orange5   { color: rgb(255, 188, 100); }
+  .b-orange6   { color: rgb(255, 201, 120)  }
+  .b-orange7   { color: rgb(255, 201, 140); }
+  .b-orange8   { color: rgb(255, 203, 160); }
+  .b-orange9   { color: rgb(255, 223, 180); }
+  .b-orange10  { color: rgb(255, 231, 200); }
+  
+  .b-dark-orange   { color: rgb(100, 51, 5); }
+  .b-dark-orange1  { color: rgb(90, 46, 5);  }
+  .b-dark-orange2  { color: rgb(85, 44, 5);  }
+  .b-dark-orange3  { color: rgb(80, 41, 5);  }
+  .b-dark-orange4  { color: rgb(70, 36, 5);  }
+  .b-dark-orange5  { color: rgb(65, 34, 5);  }
+  .b-dark-orange6  { color: rgb(60, 22, 5);  }
+  .b-dark-orange7  { color: rgb(50, 23, 5);  }
+  .b-dark-orange8  { color: rgb(45, 20, 5);  }
+  .b-dark-orange9  { color: rgb(40, 15, 5);  }
+  .b-dark-orange10 { color: rgb(30, 15, 5);  }
+  
+  .b-purple    { color: rgb(111, 0, 255);   }
+  .b-purple1   { color: rgb(130, 20, 255);  }
+  .b-purple2   { color: rgb(122, 40, 255);  }
+  .b-purple3   { color: rgb(102, 60, 255);  }
+  .b-purple4   { color: rgb(127, 80, 255);  }
+  .b-purple5   { color: rgb(172, 100, 255); }
+  .b-purple6   { color: rgb(167, 120, 255)  }
+  .b-purple7   { color: rgb(184, 140, 255); }
+  .b-purple8   { color: rgb(196, 160, 255); }
+  .b-purple9   { color: rgb(196, 180, 255); }
+  .b-purple10  { color: rgb(219, 200, 255); }
+  
+  .b-dark-purple   { color: rgb(30, 5, 100); }
+  .b-dark-purple1  { color: rgb(35, 5, 90);  }
+  .b-dark-purple2  { color: rgb(22, 5, 85);  }
+  .b-dark-purple3  { color: rgb(31, 5, 80);  }
+  .b-dark-purple4  { color: rgb(19, 5, 70);  }
+  .b-dark-purple5  { color: rgb(16, 5, 65);  }
+  .b-dark-purple6  { color: rgb(13, 5, 60);  }
+  .b-dark-purple7  { color: rgb(17, 5, 50);  }
+  .b-dark-purple8  { color: rgb(16, 5, 45);  }
+  .b-dark-purple9  { color: rgb(13, 5, 40);  }
+  .b-dark-purple10 { color: rgb(10, 5, 30);  }
+  
+  .b-gray    { color: rgb(40, 40, 40);    }
+  .b-gray1   { color: rgb(60, 60, 60);    }
+  .b-gray2   { color: rgb(80, 80, 80);    }
+  .b-gray3   { color: rgb(100, 100, 100); }
+  .b-gray4   { color: rgb(120, 120, 120); }
+  .b-gray5   { color: rgb(140, 140, 140); }
+  .b-gray6   { color: rgb(160, 160, 160); }
+  .b-gray7   { color: rgb(180, 180, 180); }
+  .b-gray8   { color: rgb(200, 200, 200); }
+  .b-gray9   { color: rgb(220, 220, 220); }
+  .b-gray10  { color: rgb(240, 240, 240); }
+  
+  .b-dark-gray    { color: rgb(40, 40, 40);    }
+  .b-dark-gray1   { color: rgb(60, 60, 60);    }
+  .b-dark-gray2   { color: rgb(80, 80, 80);    }
+  .b-dark-gray3   { color: rgb(100, 100, 100); }
+  .b-dark-gray4   { color: rgb(120, 120, 120); }
+  .b-dark-gray5   { color: rgb(140, 140, 140); }
+  .b-dark-gray6   { color: rgb(160, 160, 160); }
+  .b-dark-gray7   { color: rgb(180, 180, 180); }
+  .b-dark-gray8   { color: rgb(200, 200, 200); }
+  .b-dark-gray9   { color: rgb(220, 220, 220); }
+  .b-dark-gray10  { color: rgb(240, 240, 240); }
+  
+  .b-pink    { color: rgb(255, 0, 255);   }
+  .b-pink1   { color: rgb(255, 20, 255);  }
+  .b-pink2   { color: rgb(255, 40, 237);  }
+  .b-pink3   { color: rgb(255, 60, 213);  }
+  .b-pink4   { color: rgb(255, 80, 255);  }
+  .b-pink5   { color: rgb(255, 100, 247); }
+  .b-pink6   { color: rgb(251, 120, 255)  }
+  .b-pink7   { color: rgb(255, 140, 249); }
+  .b-pink8   { color: rgb(255, 160, 255); }
+  .b-pink9   { color: rgb(255, 180, 245); }
+  .b-pink10  { color: rgb(255, 200, 246); }
+  
+  .b-dark-pink   { color: rgb(100, 5, 100); }
+  .b-dark-pink1  { color: rgb(90, 5, 79);   }
+  .b-dark-pink2  { color: rgb(82, 5, 85);   }
+  .b-dark-pink3  { color: rgb(80, 5, 68);   }
+  .b-dark-pink4  { color: rgb(70, 5, 67);   }
+  .b-dark-pink5  { color: rgb(65, 5, 57);   }
+  .b-dark-pink6  { color: rgb(60, 5, 55);   }
+  .b-dark-pink7  { color: rgb(50, 5, 46);   }
+  .b-dark-pink8  { color: rgb(45, 5, 40);   }
+  .b-dark-pink9  { color: rgb(40, 5, 40);   }
+  .b-dark-pink10 { color: rgb(30, 5, 28);   }
+  
+  .btn-rgb {
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+  }
+  
+  .btn-rgb:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  .btn-rgb:active {
+      color: #fff
+  }
+  
+  .btn-rgb:active:after {
+      background: transparent;
+  }
+  
+  .btn-rgb:hover:before {
+      opacity: 1;
+  }
+  
+  .btn-rgb:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="morais.css" />
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <title>NAVS</title>
+</head>
+
+<body class="font1">
+
+    <nav class="top-0 bg-custom-gray-blue2 w-full-100 h-5 flex">
+        <ul class="w-full-100 flex mg-left-0 v-center-row mg-right-4">
+        <a href="#" class="white fade txt-font-09 mg-h-1"><li><img src="img/logo2.png" class="w-2 pd-top-05" alt=""> </li> </a>
+        <a href="#" class="white fade link-white txt-font-09 mg-h-1"><li> Início </li></a>
+        <a href="#" class="white fade link-white txt-font-09 mg-h-1"><li> Produtos </li></a>
+        <a href="#" class="white fade link-white txt-font-09 mg-h-1"><li> Contato </li></a>
+        <a href="#" class="white fade link-white txt-font-09 mg-h-1"><li> Sobre </li></a>
+        <form class="w-full-100 flex mg-right-0 mg-right-4 righter f-right txt-right v-center-row">
+        <div class="no-border transparent">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-1 white mg-right-05" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        </div>
+        <input id="search-input" class="input-default w-15 h-2 b-radius-05 pd-h-1 pd-v-01 txt-font-1" placeholder="Pesquise por componentes aqui...">
+        </form>
+        <a href="" class="dark-blue fade btn-custom btn-hover bg-blue5 txt-font-09 mg-h-02"> <li> Entrar </li> </a>
+        <a href="" class="dark-blue fade btn-custom btn-hover bg-blue5 txt-font-09 mg-h-02"> <li> Cadastrar </li> </a>
+        </ul>
+        </nav>
+
+        <div class="mg-2"></div>
+
+        <nav class="bg-red-gradient w-full-100 h-auto pd-bottom-08 pd-top-0 flex v-center-row relative">
+            <div class="w-full-100 mg-top-07 mg-left-09 txt-center">
+            <a href="#" class="linked black fade txt-font-09 mg-h-1"> Início </a>
+            <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Ranking </a>
+            <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Destaques </a>
+            <a href="#" class="link-gray gray2 fade txt-font-09 mg-h-1"> Sobre </a>
+            </div>
+            <form class="w-full-100 flex ctr auto pd-top-09 v-center-row">
+            <div class="no-border transparent">
+            <label for="searchy-input">
+            <svg onclick="search_style_hover()" id="svg_search" xmlns="http://www.w3.org/2000/svg" class="scale-element pointer fade pd-05 w-1 black mg-right-05 absolute left-full-48 top-1-01"fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            </label>
+            </div>
+            <input id="searchy-input" class="hover-scale-element fade pointer max-z-index txt-upper no-border black no-outline bg-transparent w-25 h-2 b-radius-55 pd-h-1 pd-v-01 txt-font-09" autocomplete="off" onclick="search_style_hover()" onfocusout="check_search_style_hover()">
+            </form>
+            <div class="w-full-100 mg-top-07 mg-right-09 txt-center ctr inline">
+            <a href="#" class="black fade btn-custom btn-hover bg-orange7 txt-font-09 mg-h-05"> Login </a>
+            <a href="#" class="black fade btn-custom btn-hover bg-orange9 txt-font-09 mg-h-05"> Criar conta </a>
+            </div>
+            </nav>
+
+            <div class="mg-2"></div>
+            
+<nav class="top-0 bg-custom-gray-purple w-full-100 h-4 flex">
+    <div class="mg-left-5 mg-top-04 f-left"> <img src="img/logo-white.png" onclick="link3()" class="w-2 mg-top-08" alt=""></div>
+    <ul class="w-full-80 flex mg-left-0 ctr v-center-row txt-center">
+    <li class="pointer white hover-scale fade txt-font-09 mg-h-1" onclick="link_left()"><svg xmlns="http://www.w3.org/2000/svg" class="w-1 pd-top-01" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 15">
+    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    </svg> </li>
+    <a href="#" id="link1" onclick="link1()" class="gray7 hover-scale fade w-5 txt-font-06 mg-h-2"> <li> Mais </li> </a>
+    <a href="#" id="link2" onclick="link2()" class="gray7 hover-scale fade w-5 txt-font-08 mg-h-2"> <li> Produtos </li> </a>
+    <a href="#" id="link3" onclick="link3()" class="white hover-scale fade w-5 txt-font-1 mg-h-2"> <li> Início </li> </a>
+    <a href="#" id="link4" onclick="link4()" class="gray7 hover-scale fade w-5 txt-font-08 mg-h-2"> <li> Contato </li> </a>
+    <a href="#" id="link5" onclick="link5()" class="gray7 hover-scale fade w-5 txt-font-06 mg-h-2"> <li> Sobre </li> </a>
+    <li class="pointer white hover-scale fade txt-font-09 mg-h-1" onclick="link_right()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-1 pd-top-01" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 15">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+    </svg>
+    </li>
+    </ul>
+    <div class="mg-right-5 mg-top-1 f-right flex">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-1 white mg-right-05 mg-bottom-07" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+    <input id="search-input" class="input-default black w-15 h-2 b-radius-100 pd-h-1 txt-font-1" placeholder="Pesquise por componentes aqui...">
+    </div>
+    </nav>
+
+    <main class="h-100"></main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
