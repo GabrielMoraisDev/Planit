@@ -2,6 +2,10 @@
   background-color: #5c488a;
 }
 
+.bg-dark-nav2{
+  background-color: #3d2c64;
+}
+
 .hover-bg-nav2-dark:hover{
   background-color: #3d2c64;
 }
