@@ -54,6 +54,16 @@
   animation: planit-bg infinite linear 5s;
 }
 
+.bg-chiaperini-amarelo{
+  background-color: #ffd600;
+}
+
+.chiaperini-amarelo{
+  color: #ffd600;
+}
+
+.b-chiaperini-amarelo{ border-color: #ffd600; }
+
 @keyframes planit-bg{
   0%{ background-position-x: 0vw; }
   100%{ background-position-x: 90vw; }
