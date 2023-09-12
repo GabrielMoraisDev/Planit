@@ -56,6 +56,15 @@
 
 .b-chiaperini-amarelo{ border-color: #ffd600; }
 
+.bg-chiaperini-dark{
+  background-color: #0a0f26e5;
+}
+
+.bg-chiaperini2-hover:hover{
+  background-color: #455296;
+}
+
+
 @keyframes planit-bg{
   0%{ background-position-x: 0vw; }
   100%{ background-position-x: 90vw; }
