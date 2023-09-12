@@ -2,6 +2,10 @@
   background-color: #5c488a;
 }
 
+.bg-dark-nav2{
+  background-color: #3d2c64;
+}
+
 .hover-bg-nav2-dark:hover{
   background-color: #3d2c64;
 }
@@ -17,18 +21,6 @@
 .bg-orange-default{
   background-color: #eeb200;
 }
-
-.bg-chiaperini{background-color: #313b6c;}
-.bg-chiaperini-amarelo{background-color: #ffd600;}
-
-.chiaperini{color: #313b6c;}
-.chiaperini-amarelo{color: #ffd600;}
-
-.bg-techto{background-color: #ed3237;}
-.bg-techto-amarelo{background-color: #fff212;}
-
-.techto{color: #ed3237;}
-.techto-amarelo{color: #fff212;}
 
 .bg-planit{ 
   background-image: linear-gradient(to right, rgb(37, 5, 100), rgb(26, 156, 159)); 
@@ -72,6 +64,9 @@
   background-color: #455296;
 }
 
+.bg-chiaperini2{
+  background-color: #455296;
+}
 
 @keyframes planit-bg{
   0%{ background-position-x: 0vw; }
