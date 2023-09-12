@@ -46,6 +46,10 @@
   animation: planit-bg infinite linear 5s;
 }
 
+.bg-chiaperini{
+  background-color: #313b6c;
+}
+
 .bg-chiaperini-amarelo{
   background-color: #ffd600;
 }
@@ -55,6 +59,15 @@
 }
 
 .b-chiaperini-amarelo{ border-color: #ffd600; }
+
+.chiaperini{
+  color: #313b6c;
+}
+
+
+.bg-gray-custom{
+  background-color: #f5f5f5;
+}
 
 .bg-chiaperini-dark{
   background-color: #0a0f26e5;
