@@ -1,0 +1,26 @@
+
+.nav1{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: row;align-items: center;
+    background: linear-gradient(to right, var(--bg-nav1-1), var(--bg-nav1-2));
+}
+
+.nav1 a{
+    color: var(--txt-nav1);  
+    text-decoration: none; 
+    position: relative; 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.01vw;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+@import 'ANIMATION/animated.css';
+@import 'COLORS/colors.css';
+@import 'COMPONENTS/components.css';
+@import 'DEFAULT/defined.css';
+@import 'DEFAULT/full.css';
+@import 'DEFAULT/px.css';
+@import 'DEFAULT/vh.css';
+@import 'DEFAULT/vw.css';
+@import 'SCREEN/notebook.css';
+@import 'SCREEN/tablet.css';
+@import 'SCREEN/mobile.css';
+@import 'FONTS/fonts.css';

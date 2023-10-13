@@ -1,0 +1,67 @@
+.bg-ani{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--ani), var(--ani2), var(--ani));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani2{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--ani), var(--ani2), var(--ani));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+  
+@keyframes gradientAnimation {
+  0% {background-position: 0%;}
+  100% {background-position: 200%;}
+}
+
+.bg-ani3{
+    background-color: var(--ani);
+    animation: colorAnimation 5s linear infinite;
+}
+
+.bg-ani4{
+    background-color: var(--ani);
+    animation: colorAnimation 5s ease infinite;
+}
+
+@keyframes colorAnimation {
+    0% {background-color: var(--ani);}
+    50% {background-color: var(--ani2);}
+    100% {background-color: var(--ani);}
+} 
+
+.bg-ani5{
+    background-color: var(--ani);
+    animation: colorAnimation2 5s linear;
+}
+
+.bg-ani6{
+    background-color: var(--ani);
+    animation: colorAnimation2 5s ease;
+}
+
+@keyframes colorAnimation2 {
+    0% {background-color: var(--ani2);}
+    100% {background-color: var(--ani);}
+} 
+
+.bg-ani7{
+    background-color: var(--ani);
+    animation: blink 5s linear infinite;
+}
+
+.bg-ani8{
+    background-color: var(--ani);
+    animation: blink 5s ease infinite;
+}
+
+@keyframes blink {
+    0% {background-color: var(--ani);}
+    40% {background-color: var(--ani);}
+    60% {background-color: var(--ani2);}
+    80% {background-color: var(--ani);}
+    100% {background-color: var(--ani);}
+} 
